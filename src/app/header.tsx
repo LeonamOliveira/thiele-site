@@ -32,7 +32,6 @@ export default function Header() {
                     alt="Máquinas"                
                 ></Image>
         </footer>
-
         <div>
             <Carousel>
                 <CarouselContent>
@@ -44,7 +43,7 @@ export default function Header() {
                             alt="Máquinas"                
                         >
                         </Image>
-                    </CarouselItem>
+                    </CarouselItem>                  
                     </CarouselContent>
                     <CarouselPrevious />
                 <CarouselNext />
