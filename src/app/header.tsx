@@ -27,8 +27,8 @@ export default function Header() {
             </div>
                 <Image
                     src={ImageLogo}
-                    width={136}
-                    height={114}
+                    width={100}
+                    height={100}
                     alt="Máquinas"                
                 ></Image>
         </footer>

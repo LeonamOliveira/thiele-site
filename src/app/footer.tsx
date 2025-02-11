@@ -1,27 +1,39 @@
 export default function Footer() {
     return(
-        <footer> 
-            <p>Footer!</p>
-            <div>
-                <h4>Institucional</h4>
-                <h6>Quem Somos</h6>
-                <h6>Assistência Técnica</h6>
+        <footer className="border-grid border-t py-6 md:py-0 text-left">
+        <div className="container-wrapper grid grid-cols-3 gap-4">
+            <div className="container py-4 text-left">
+                <p>Institucional</p>
+                <div className="text-balance text-sm leading-loose text-muted-foreground">
+                    <p>Quem Somos</p>
+                    <p>Assistência Técnica</p>
+                </div>
             </div>
-            <div>
-                <h4>Indústrias Thiele</h4>
-                <h6>Estr. Estadual Boituva - Tatuí</h6>
-                <h6>(SP-129), 6118 - AP,</h6>
-                <h6>Boituva - SP</h6>
-                <h6>18550-000</h6>
-                <h6>Horário de atendimento: das 8h às 18h</h6>
+            <div className="container py-4 text-left">
+                <p>Indústrias Thiele</p>
+                <div className="text-balance text-sm leading-loose text-muted-foreground">
+                    <p>
+                        Estr. Estadual Boituva - Tatuí,<br/>
+                        (SP-129), 6118 - AP, <br/>
+                        Boituva - SP,<br/>
+                        18550-000 <br/>
+                        Horário de Atendimento: das 8h às 18h
+                    </p>
+                </div>
             </div>
-            <div>
-                <h4>Central de Atendimento</h4>
-                <h6>Televendas</h6>
-                <h6>(11)93011-1440</h6>
-                <h6>E-mail</h6>
-                <h6>comercial@thiele.com.br</h6>
+            <div className="container py-4 text-left">
+                <p>Central de Atendimento</p>
+                    
+                <div className="text-balance text-sm leading-loose text-muted-foreground">
+                    <p>
+                        Televendas <br/>
+                        <strong>(11)93011-1440</strong><br/>
+                        E-mail:
+                        comercial@thiele.com.br
+                    </p>
+                </div>
             </div>
-        </footer>
+        </div>
+      </footer>
     )
 }
