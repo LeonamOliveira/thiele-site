@@ -12,7 +12,7 @@ import {
 export default function Header() {
     return (
         <>
-        <footer className="w-full bg-background border-t border-border mt-4">
+        <header className="w-full bg-background border-t border-border mt-12">
         <div className="container flex flex-col md:flex-row items-center justify-between py-4">
             <div className="text-left w-full md:w-auto">
                 <p className="text-sm text-muted-foreground whitespace-nowrap md:whitespace-normal">
@@ -31,14 +31,14 @@ export default function Header() {
                     height={100}
                     alt="Máquinas"                
                 ></Image>
-        </footer>
+        </header>
         <div>
             <Carousel>
                 <CarouselContent>
                     <CarouselItem>
                         <Image
                             src={ImageMachine}
-                            width={1000}
+                            width={700}
                             height={412}
                             alt="Máquinas"                
                         >

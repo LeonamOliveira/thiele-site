@@ -1,39 +1,53 @@
+// React and Next.js imports
+import Image from "next/image";
+import Link from "next/link";
+
+// Third-party library imports
+
+// Local component imports
+import { Section, Container } from "@/components/craft";
+
+// Asset imports
+import ImageProfile from "../../public/assets/image.png";
+
 export default function Footer() {
-    return(
-        <footer className="border-grid border-t py-6 md:py-0 text-left">
-        <div className="container-wrapper grid grid-cols-3 gap-4">
-            <div className="container py-4 text-left">
-                <p>Institucional</p>
-                <div className="text-balance text-sm leading-loose text-muted-foreground">
-                    <p>Quem Somos</p>
-                    <p>Assistência Técnica</p>
-                </div>
-            </div>
-            <div className="container py-4 text-left">
-                <p>Indústrias Thiele</p>
-                <div className="text-balance text-sm leading-loose text-muted-foreground">
-                    <p>
-                        Estr. Estadual Boituva - Tatuí,<br/>
-                        (SP-129), 6118 - AP, <br/>
-                        Boituva - SP,<br/>
-                        18550-000 <br/>
-                        Horário de Atendimento: das 8h às 18h
-                    </p>
-                </div>
-            </div>
-            <div className="container py-4 text-left">
-                <p>Central de Atendimento</p>
-                    
-                <div className="text-balance text-sm leading-loose text-muted-foreground">
-                    <p>
-                        Televendas <br/>
-                        <strong>(11)93011-1440</strong><br/>
-                        E-mail:
-                        comercial@thiele.com.br
-                    </p>
-                </div>
-            </div>
-        </div>
-      </footer>
-    )
+  return (
+    <footer>
+      <Section>
+        <Container className="grid gap-12 lg:grid-cols-[2.5fr_3.5fr_2.5fr]">
+          <div className="flex flex-col gap-2">
+            <h5><strong>Institucional</strong></h5>
+            <Link href="/">Quem Somos</Link>
+            <Link href="/">Assistência Técnica</Link>
+          </div>
+          <div className="flex flex-col gap-2">
+            <h5><strong>Indústrias Thiele</strong></h5>
+            <p>
+              Estr. Estadual Boituva - Tatuí <br/>
+              (Sp-129), 6118 - AP, <br/> 
+              Boituva - SP <br/> 
+              18550-000 <br/>
+              Horário de atendimento: das 8h às 18h
+            </p>
+          </div>
+          <div className="flex flex-col gap-2">
+            <h5><strong>Central de Atendimento</strong></h5>
+            <p>
+              Televendas <br/>
+              (11)93011-1440 <br/>
+              E-mail <br/>
+              comercial@thiele.com.br
+            </p>
+          </div>
+          <div className="grid gap-4">
+            <p className="text-muted-foreground">
+              ©{" "}
+              <a href="#">GOAS CONSULTORIA. <br/></a>
+              Todos os direitos reservados. <br/>2025-presente.
+            </p>
+          </div>
+        </Container>
+      </Section>
+    </footer>
+  );
 }

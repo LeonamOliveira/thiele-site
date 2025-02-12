@@ -1,57 +1,84 @@
+// React and Next.js imports
+import * as React from "react";
+
+import Link from "next/link";
+import Image from "next/image";
+
+// UI component imports
+import { Section, Container } from "@/components/craft";
 import { Button } from "@/components/ui/button";
 
-export default function Machines() {
-    return(
-        <>
-            <div className="w-full h-[100px] bg-blue-900 px-4 md:px-8 mt-[-40px]">
-                <p className="font-inter font-bold text-2xl md:text-4xl leading-tight text-white text-center py-6 md:py-10"> 
-                    CHAMADA PARA COMPRA
-                </p>
-            </div>
-            <div className="container flex flex-col md:flex-row items-center justify-between py-4">
-                <div className="text-left w-full md:w-auto">
-                    <p>Conheça as Lavadoras Thiele</p>
-                    <h6>Chegaram as novas lavadoras a bateria de lítio!</h6>
-                    <h6>Tecnologia moderna, sem cabos ou combustão, para limpeza eficiente e sustentável.</h6>
-                    <h6>Mais autonomia, praticidade e potência no seu trabalho.</h6>
-                </div>
-                <div className="text-right w-full md:w-auto">
-                    <p>Oi</p>
-                </div>
-            </div>
-            <div className="w-full h-[100px] bg-blue-900 px-4 md:px-8 mt-[-40px]">
-                <div>
-                    <h6 className="font-inter font-bold text-2xl md:text-2xl leading-tight text-white text-left py-2 md:py-2"> 
-                        Alta Autonomia
-                    </h6>
-                </div>
-                <div>
-                    <h6 className="font-inter font-bold text-2xl md:text-2xl leading-tight text-white text-center py-2 md:py-2"> 
-                        Carregador Compacto 
-                    </h6>
-                </div>
-                <div>
-                    <h6 className="font-inter font-bold text-2xl md:text-2xl leading-tight text-white text-center py-2 md:py-2"> 
-                        Baterias Livre de Manutenção
-                    </h6>
-                </div>
-                <div>
-                    <h6 className="font-inter font-bold text-2xl md:text-2xl leading-tight text-white text-right py-2 md:py-2"> 
-                        Maior Durabilidade
-                    </h6>
-                </div>
-            </div>
-            <div className="w-full h-[300px] bg-blue-900 px-4 md:px-8 mt-[-40px]">
-                <p className="font-inter font-bold text-2xl md:text-4xl leading-tight text-white text-center py-6 md:py-10"> 
-                    Informações
-                </p>
-                <p>
-                    Vivamus augue enim, laoreet fermentum interdum in, ornare quis mauris. Vestibulum vel urna quis ex lobortis venenatis quis et sem. Proin vel turpis vitae mauris lacinia egestas id nec erat. Etiam bibendum, magna sit amet imperdiet sodales, mi nisl pretium purus, et malesuada ex tellus id ipsum. Sed sed ante ipsum. In sollicitudin leo dolor, ac imperdiet lacus condimentum sed. Vivamus tincidunt mi et blandit feugiat. Aliquam accumsan fringilla nisl fringilla malesuada. Mauris porta, risus eu rutrum pharetra, dolor lectus gravida augue, in commodo massa tortor id ipsum. Mauris enim diam, tincidunt ac pharetra at, scelerisque eget dolor. In hac habitasse platea dictumst. Aliquam feugiat condimentum interdum. Morbi sit amet orci ut magna fringilla luctus id eu augue. Nulla gravida commodo libero faucibus auctor. Morbi leo mauris, tempus sed nulla at, malesuada venenatis ex. Maecenas pulvinar, ex a aliquam venenatis, tortor sapien malesuada est, ut suscipit sapien velit sit amet ante.
-                </p>
-                <Button variant={"secondary"}>
-                    Solicite um orçamento
+// Asset imports
+import TH310 from "../../public/assets/TH310.png";
+import TH100 from "../../public/assets/TH100 - 1.png";
+import TH1001 from "../../public/assets/TH100 - 2.png";
+import TH700 from "../../public/assets/TH700 - 1.png";
+// import TH7001 from "../../public/assets/TH700 -2.png";
+// import Maquinas from "../../public/assets/Máqiuinas.png";
+
+// const photos = [
+//     {   
+//       src: Maquinas,
+//     },
+//     {
+//       src: TH310,
+//     },
+//     {
+//       src: TH100,
+//     },
+//     {
+//       src: TH1001,
+//     },
+//     {
+//       src: TH700,
+//     },
+//     {
+//       src: TH7001,
+//     }
+//   ];
+  
+
+const Machines = () => {
+  return (
+    <>
+    
+        <Section>
+        <Container className="grid items-stretch md:grid-cols-2 md:gap-12">
+            <div className="flex flex-col gap-6 py-8">
+            <h1 className="!my-0"><strong>Conheça as <br/> LavadorasThiele</strong></h1>
+            <p className="font-light leading-[1.4] opacity-70">
+                Chegaram as novas lavadoras a bateria de lítio!
+            </p>
+            <p className="font-light leading-[1.4] opacity-70">
+                Tecnologia moderna, sem cabos ou combustão, para limpeza eficiente e sustentável. <br/>
+                Mais autonomia, praticidade e potência no seu trabalho.
+            </p>
+            <div className="not-prose flex items-center gap-2">
+                <Button className="w-fit" asChild style={{backgroundColor: 'rgb(43, 65, 141)'}}>
+                <Link href="#">Solicite um orçamento</Link>
                 </Button>
             </div>
-        </>
-    )
-}
+            </div>
+            <div className="not-prose relative flex h-96 overflow-hidden rounded-lg border">
+            <Image
+                src={TH310}
+                alt="placeholder"
+                className="fill object-cover"
+                height={200}
+                width={450}
+            />
+            <Image
+                src={TH100}
+                alt="placeholder"
+                className="fill object-cover"
+                height={200}
+                width={200}
+            />
+            </div>
+        </Container>
+        </Section>
+    </>
+  );
+};
+
+export default Machines;
