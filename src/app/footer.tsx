@@ -1,6 +1,6 @@
 export default function Footer() {
     return(
-        <footer className="border-grid border-t py-6 md:py-0 text-left">
+        <footer className="border-grid py-6 md:py-0 text-left">
         <div className="container-wrapper grid grid-cols-3 gap-4">
             <div className="container py-4 text-left">
                 <p>Institucional</p>
