@@ -1,6 +1,6 @@
 // React and Next.js imports
 import Link from "next/link";
-import Image from "next/image";
+// import Image from "next/image";
 
 // UI component imports
 import { Section, Container } from "@/components/craft";

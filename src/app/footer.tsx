@@ -1,3 +1,15 @@
+// React and Next.js imports
+// import Image from "next/image";
+// import Link from "next/link";
+
+// Third-party library imports
+
+// Local component imports
+// import { Section, Container } from "../components/craft";
+
+// Asset imports
+// import ImageProfile from "../../public/assets/image.png";
+
 export default function Footer() {
     return(
         <footer className="border-grid py-6 md:py-0 text-left">
