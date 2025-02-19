@@ -12,7 +12,7 @@ import {
 export default function Header() {
     return (
         <>
-        <header className="w-full bg-background border-t border-border mt-12">
+        <header className="w-full bg-background border-border mt-12">
         <div className="container flex flex-col md:flex-row items-center justify-between py-4">
             <div className="text-left w-full md:w-auto">
                 <p className="text-sm text-muted-foreground whitespace-nowrap md:whitespace-normal">
@@ -24,7 +24,7 @@ export default function Header() {
                     comercial@thiele.com.br
                 </p>
             </div>
-            </div>
+        </div>
                 <Image
                     src={ImageLogo}
                     width={100}
@@ -49,6 +49,7 @@ export default function Header() {
                 <CarouselNext />
             </Carousel>
         </div>
+        
         </>
     )
 }
