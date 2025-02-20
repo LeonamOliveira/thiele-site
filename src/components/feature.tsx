@@ -12,40 +12,58 @@ import Balancer from "react-wrap-balancer";
 import imageChumbo from '../../public/assets/chumbo.png';
 import imageReposicao from '../../public/assets/reposicao.jpeg';
 import imageTH100 from '../../public/assets/TH100 - 1.png';
+import imageTH300 from '../../public/assets/TH300.png';
+import imageTH310 from '../../public/assets/TH310.png';
+
 import Image from "next/image";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTrigger } from "./ui/dialog";
 import { DialogTitle } from "@radix-ui/react-dialog";
+import { StaticImport } from "next/dist/shared/lib/get-img-props";
 
 type FeatureText = {
-  icon: JSX.Element;
   title: string;
   description: string;
   href?: string;
   cta?: string;
   learnMore?: string;
+  image?: string | StaticImport;
+  capacity?: string;
+  productivity?: string;
+  battery?: string;
 };
 
 const featureText: FeatureText[] = [
   {
-    icon: <Coins className="h-6 w-6" />,
     title: "TH100",
     href: "/",
     description:
       "A limpadora TH 100 está disponível em duas configurações, que se adaptam perfeitamente às necessidades do seu negócio.",
     cta: "Solicite um orçamento",
-    learnMore: "Saiba Mais"
+    learnMore: "Saiba Mais",
+    image: imageTH100.src,
+    capacity: 'Tanques de 4.5 | 3.5 litros',
+    productivity: 'Produtividade de 1000 M2/H',
+    battery: 'Autonomia de 2 horas'
   },
   {
-    icon: <Coins className="h-6 w-6" />,
-    title: "TH300/310",
+    title: "TH300",
     href: "/",
     description:
       "xxxxxxxxxxxxxxxxxxxxxx",
     cta: "Solicite um orçamento",
-    learnMore: "Saiba Mais"
+    learnMore: "Saiba Mais",
+    image: imageTH300.src
   },
   {
-    icon: <Coins className="h-6 w-6" />,
+    title: "TH310",
+    href: "/",
+    description:
+      "xxxxxxxxxxxxxxxxxxxxx",
+    cta: "Solicite um orçamento",
+    learnMore: "Saiba Mais",
+    image: imageTH310.src
+  },
+  {
     title: "TH700",
     href: "/",
     description:
@@ -54,17 +72,7 @@ const featureText: FeatureText[] = [
     learnMore: "Saiba Mais"
   },
   {
-    icon: <Coins className="h-6 w-6" />,
     title: "TH800",
-    href: "/",
-    description:
-      "xxxxxxxxxxxxxxxxxxxxx",
-    cta: "Solicite um orçamento",
-    learnMore: "Saiba Mais"
-  },
-  {
-    icon: <Coins className="h-6 w-6" />,
-    title: "TH700",
     href: "/",
     description:
       "xxxxxxxxxxxxxxxxxxxxxxx",
@@ -72,8 +80,7 @@ const featureText: FeatureText[] = [
     learnMore: "Saiba Mais"
   },
   {
-    icon: <Coins className="h-6 w-6" />,
-    title: "TH8000",
+    title: "TH900",
     href: "/",
     description:
       "xxxxxxxxxxxxxxxxxxxxxx",
@@ -81,7 +88,14 @@ const featureText: FeatureText[] = [
     learnMore: "Saiba Mais"
   },
   {
-    icon: <Coins className="h-6 w-6" />,
+    title: "TH1000",
+    href: "/",
+    description:
+      "xxxxxxxxxxxxxxxxxxxxx",
+    cta: "Solicite um orçamento",
+    learnMore: "Saiba Mais"
+  },
+  {
     title: "TH1200",
     href: "/",
     description:
@@ -90,16 +104,6 @@ const featureText: FeatureText[] = [
     learnMore: "Saiba Mais"
   },
   {
-    icon: <Coins className="h-6 w-6" />,
-    title: "TH2000",
-    href: "/",
-    description:
-      "xxxxxxxxxxxxxxxxxxxxx",
-    cta: "Solicite um orçamento",
-    learnMore: "Saiba Mais"
-  },
-  {
-    icon: <Coins className="h-6 w-6" />,
     title: "TH2000",
     href: "/",
     description:
@@ -108,6 +112,58 @@ const featureText: FeatureText[] = [
     learnMore: "Saiba Mais"
   },
 ];
+
+const renderFeatureItem = (feature: FeatureText) => (
+  <Dialog key={feature.title}>
+    <DialogTrigger asChild>
+      <div className="flex flex-col justify-between gap-6 rounded-lg border p-6 transition-all hover:-mt-2 hover:mb-2"
+        style={{ backgroundColor: "#2B418D" }}>
+        <div className="grid gap-4"  style={{ backgroundColor: "#2B418D" }}>
+          <h4 className="text-xl text-primary" style={{ color: "#FFFFFF" }}><strong>{feature.title}</strong></h4>
+          <p className="text-base opacity-75" style={{ color: "#FFFFFF" }}>{feature.description}</p>
+          {feature.image && (
+            <div className="grid gap-4">
+              <Image
+              src={feature.image}
+              width={500}
+              alt={'Imagem'}
+              height={300}>
+              </Image>
+            </div>
+          )}
+        </div>
+      </div>
+    </DialogTrigger>
+    <DialogContent>
+      <DialogHeader>
+      <DialogTitle>{feature.title}</DialogTitle>
+      <DialogDescription>{feature.description}</DialogDescription>
+      <div className="flex flex-col justify-between gap-6 rounded-lg border p-6 transition-all hover:-mt-2 hover:mb-2"
+      style={{ backgroundColor: "##F2F2F2" }}>
+        {feature.image && (
+          <Image
+          src={feature.image}
+          width={500}
+          alt={'Imagem'}
+          height={300}>
+          </Image>
+        )}
+        {feature.capacity && <><p className="font-bold my-0 leading-3">Capacidade</p>
+        <p className="text-gray-600 my-0 leading-3">{feature.capacity}</p></>}
+        {feature.productivity && <><p className="font-bold leading-3">Produtividade</p>
+        <p className="text-gray-600 leading-3">{feature.productivity}</p></>}
+        {feature.battery && <><p className="font-bold leading-3">Bateria </p>
+        <p className="text-gray-600 leading-3">{feature.battery}</p></>}
+        {feature.cta && (
+          <div className="grid gap-4 bg-[#2B418D]">
+            <Button className="rounded-md bg-[#2B418D]">{feature.cta}</Button>
+          </div>
+          )}
+        </div>
+      </DialogHeader>
+    </DialogContent>
+  </Dialog>
+)
 
 const Feature = () => {
   return (
@@ -132,11 +188,11 @@ const Feature = () => {
             </Button> 
           </div>
         </div>
-        <div className="not-prose relative flex h-96 overflow-hidden rounded-lg border">
+        <div className="not-prose relative flex h-96 overflow-hidden rounded-lg border w-full">
           <CarouselDemo />
         </div>
       </Container>
-      <div className="w-full h-[50px] bg-blue-900 px-4 md:px-8 mt-[-20px]">
+      <div className="w-full h-[50px] bg-blue-900 px-4 md:px-8 mt-[-20px] w-100">
       </div>
       <Container className="not-prose">
         <div className="flex flex-col gap-6">
@@ -154,50 +210,7 @@ const Feature = () => {
           </p>
 
           <div className="mt-12 grid gap-12 md:mt-4 md:grid-cols-3">
-            {featureText.map(
-              ({ icon, title, description, cta }, index) => (
-                <Dialog
-                  key={index}>
-                  <DialogTrigger asChild>
-                    <div className="flex flex-col justify-between gap-6 rounded-lg border p-6 transition-all hover:-mt-2 hover:mb-2"
-                      style={{ backgroundColor: "#2B418D" }}>
-                      <div className="grid gap-4"  style={{ backgroundColor: "#2B418D" }}>
-                        <h4 className="text-xl text-primary" style={{ color: "#FFFFFF" }}><strong>{title}</strong></h4>
-                        <p className="text-base opacity-75" style={{ color: "#FFFFFF" }}>{description}</p>
-                        <div className="grid gap-4">
-                          {icon}
-                        </div>
-                      </div>
-                    </div>
-                  </DialogTrigger>
-                  <DialogContent>
-                    <DialogHeader>
-                      <DialogTitle>{title}</DialogTitle>
-                      <DialogDescription>{description}</DialogDescription>
-                      <div className="flex flex-col justify-between gap-6 rounded-lg border p-6 transition-all hover:-mt-2 hover:mb-2"
-                      style={{ backgroundColor: "##F2F2F2" }}>
-                        <Image
-                        src={imageTH100}
-                        width={500}
-                        alt={'Imagem'}>
-                        </Image>
-                        <p className="font-bold my-0 leading-3">Capacidade</p>
-                        <p className="text-gray-600 my-0 leading-3">Tanques de 4.5 | 3.5 litros</p>
-                        <p className="font-bold leading-3">Produtividade</p>
-                        <p className="text-gray-600 leading-3">Produtividade de 1000 M2/H</p>
-                        <p className="font-bold leading-3">Bateria </p>
-                        <p className="text-gray-600 leading-3">Autonomia de 2 horas </p>  
-                        <div className="grid gap-4"  style={{ backgroundColor: "#2B418D" }}>
-                        {cta && (
-                          <Button className="rounded-md" style={{backgroundColor:"#2B418D"}}>{cta}</Button>
-                          )}
-                      </div> 
-                      </div>
-                    </DialogHeader>
-                  </DialogContent>
-                </Dialog>
-              ),
-            )}
+            {featureText.map(renderFeatureItem)}
           </div>
         </div>
       </Container>
