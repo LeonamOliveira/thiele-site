@@ -4,9 +4,6 @@ import { Section, Container } from "@/components/craft";
 import { Button } from "@/components/ui/button";
 import { CarouselDemo } from "./carousel";
 
-import { Coins } from "lucide-react";
-import { JSX } from "react";
-
 import Balancer from "react-wrap-balancer";
 
 import imageChumbo from '../../public/assets/chumbo.png';
