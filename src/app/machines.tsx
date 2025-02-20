@@ -19,8 +19,8 @@ const MachineInfo = ({ children }: { children: ReactNode }) => (
 
 const Machines = () => {
   return (
-    <div className="bg-[#2B418D] py-2">
-      <div className="container flex flex-col md:flex-row items-center justify-between">
+    <div className="bg-[#2B418D] w-full py-2">
+      <div className="flex flex-col md:flex-row items-center justify-between">
         <MachineInfo>Entrega em todo o território nacional</MachineInfo>
         <MachineInfo>Central de Atendimento 24 horas</MachineInfo>
         <MachineInfo>Suporte especializado no território nacional</MachineInfo>

@@ -23,9 +23,9 @@ export function CarouselDemo() {
         <CarouselContent>
           {images.map((image, index) => (
             <CarouselItem key={index}>
-              <div className="p-1">
+              <div>
                 <Card>
-                  <CardContent className="flex aspect-square items-center justify-center p-4">
+                  <CardContent className="flex aspect-square items-center justify-center">
                     <Image
                       src={image}
                       alt={`Image ${index + 1}`}

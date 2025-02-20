@@ -13,7 +13,7 @@ export default function Header() {
     return (
         <>
         <header className="w-full bg-background border-border mt-12">
-        <div style={{backgroundColor: '#2B418D'}} className="container flex flex-col md:flex-row items-center justify-between py-4">
+        <div style={{backgroundColor: '#2B418D'}} className="container-fluid flex flex-col md:flex-row items-center justify-between py-4">
             <div className="text-left w-full md:w-auto">
                 <p className="text-center" style={{color: '#FFFFFF'}}>
                     Central de atendimento: (11) 93011-1440

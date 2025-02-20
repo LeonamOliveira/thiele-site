@@ -38,9 +38,9 @@ const featureText: FeatureText[] = [
     cta: "Solicite um orçamento",
     learnMore: "Saiba Mais",
     image: imageTH100.src,
-    capacity: 'Tanques de 4.5 | 3.5 litros',
-    productivity: 'Produtividade de 1000 M2/H',
-    battery: 'Autonomia de 2 horas'
+    capacity: 'Tanques de 3.5/4.5L',
+    productivity: 'Produtividade de 1000 m²/h',
+    battery: 'Autonomia de 1.5 horas'
   },
   {
     title: "TH300",
@@ -49,7 +49,10 @@ const featureText: FeatureText[] = [
       "xxxxxxxxxxxxxxxxxxxxxx",
     cta: "Solicite um orçamento",
     learnMore: "Saiba Mais",
-    image: imageTH300.src
+    image: imageTH300.src,
+    capacity: 'Tanque de 60L',
+    productivity: 'Produtividade de 2000m²/h',
+    battery: 'Autonima de 4 à 5 horas'
   },
   {
     title: "TH310",
@@ -58,7 +61,10 @@ const featureText: FeatureText[] = [
       "xxxxxxxxxxxxxxxxxxxxx",
     cta: "Solicite um orçamento",
     learnMore: "Saiba Mais",
-    image: imageTH310.src
+    image: imageTH310.src,
+    capacity: 'Tanque de 55L',
+    productivity: 'Produtividade de 3000m²/h',
+    battery: 'Autonomia de 4 à 5 horas'
   },
   {
     title: "TH700",
@@ -66,7 +72,10 @@ const featureText: FeatureText[] = [
     description:
       "xxxxxxxxxxxxxxxxxxxxx",
     cta: "Solicite um orçamento",
-    learnMore: "Saiba Mais"
+    learnMore: "Saiba Mais",
+    capacity: 'Tanque de 100 | 110 litros',
+    productivity: 'Produtividade de 3000 m²/h',
+    battery: 'Autonomia de 3 à 4 horas'
   },
   {
     title: "TH800",
@@ -74,7 +83,10 @@ const featureText: FeatureText[] = [
     description:
       "xxxxxxxxxxxxxxxxxxxxxxx",
     cta: "Solicite um orçamento",
-    learnMore: "Saiba Mais"
+    learnMore: "Saiba Mais",
+    capacity: 'Tanques de 90 | 100 litros',
+    productivity: 'Produtividade de 3000 m²/h',
+    battery: 'Autonomia de 3 à 4 horas'
   },
   {
     title: "TH900",
@@ -82,7 +94,10 @@ const featureText: FeatureText[] = [
     description:
       "xxxxxxxxxxxxxxxxxxxxxx",
     cta: "Solicite um orçamento",
-    learnMore: "Saiba Mais"
+    learnMore: "Saiba Mais",
+    capacity: 'Tanques de 120|130 litros',
+    productivity: 'Produtividade de 3500 m²/h',
+    battery: 'Autonomia de 3 à 4 horas'
   },
   {
     title: "TH1000",
@@ -90,7 +105,10 @@ const featureText: FeatureText[] = [
     description:
       "xxxxxxxxxxxxxxxxxxxxx",
     cta: "Solicite um orçamento",
-    learnMore: "Saiba Mais"
+    learnMore: "Saiba Mais",
+    capacity: 'Tanques de 155 | 170 litros',
+    productivity: 'Produtividade de 4500 m²/h',
+    battery: 'Autonomia de 3 à 4 horas'
   },
   {
     title: "TH1200",
@@ -98,7 +116,10 @@ const featureText: FeatureText[] = [
     description:
       "xxxxxxxxxxxxxxxxxxxxx",
     cta: "Solicite um orçamento",
-    learnMore: "Saiba Mais"
+    learnMore: "Saiba Mais",
+    capacity: 'Tanques de 245 | 266 litros',
+    productivity: 'Produtividade de 6000 m²/h',
+    battery: 'Autonomia de 6 à 8 horas'
   },
   {
     title: "TH2000",
@@ -106,7 +127,10 @@ const featureText: FeatureText[] = [
     description:
       "xxxxxxxxxxxxxxxxxxxxx",
     cta: "Solicite um orçamento",
-    learnMore: "Saiba Mais"
+    learnMore: "Saiba Mais",
+    capacity: 'Tanques de 390 | 400 litros',
+    productivity: 'Produtividade de 8000 m²/h',
+    battery: 'Autonomia de 6 à 8 horas'
   },
 ];
 
@@ -164,7 +188,7 @@ const renderFeatureItem = (feature: FeatureText) => (
 
 const Feature = () => {
   return (
-    <Section>
+    <Section className="w-full ">
       <Container className="border-b grid items-stretch md:grid-cols-2 md:gap-12">
         <div className="flex flex-col gap-6 py-8">
           <h1 className="!my-0" style={{ fontWeight: 300, fontSize: '56px', lineHeight: '62px', letterSpacing: '0%' }}>
@@ -185,7 +209,7 @@ const Feature = () => {
             </Button> 
           </div>
         </div>
-        <div className="not-prose relative flex h-96 overflow-hidden rounded-lg border w-full">
+        <div className="not-prose relative flex h-96 overflow-hidden rounded-lg w-full">
           <CarouselDemo />
         </div>
       </Container>
