@@ -241,7 +241,7 @@ const Feature = () => {
               Transforme sua máquina de chumbo ácido em lítio
           </h1>
           <p className="font-light leading-[1.4] opacity-70">
-            Lorem ipsum dolor sit amet consectetur. Quis et in ipsum ultrices imperdiet egestas. Dictum vitae phasellus egestas consectetur. Dictum quisque urna nam imperdiet mattis. Tortor dolor blandit nibh leo aliquam quisque pellentesque.
+            Revolucione seus resultados com a tecnologia que está transformando o mercado.
           </p>
           <div className="not-prose flex items-center gap-2">
             <Button className="w-fit" asChild style={{ backgroundColor: '#2B418D' }}>
@@ -264,9 +264,7 @@ const Feature = () => {
             Peças de Reposição
           </h1>
           <p className="font-light leading-[1.4] opacity-70">
-            Assegure o desempenho impecável da sua lavadora de pisos com nossas peças de reposição de alta qualidade.
-            <br /> 
-            Fabricadas com os mais altos padrões, nossas peças garantem a durabilidade e o funcionamento perfeito da sua máquina, evitando paradas e prolongando sua vida útil.
+            Fabricadas com os mais altos padrões, nossas peças garantem a durabilidade e o funcionamento perfeito da sua máquina, evitando paradas e prolongando sua vida útil.            <br /> 
           </p>
           <div className="not-prose flex items-center gap-2">
             <Button className="w-fit" asChild style={{ backgroundColor: '#2B418D' }}>
