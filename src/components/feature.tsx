@@ -8,131 +8,12 @@ import Balancer from "react-wrap-balancer";
 
 import imageChumbo from '../../public/assets/chumbo.png';
 import imageReposicao from '../../public/assets/reposicao.jpeg';
-import imageTH100 from '../../public/assets/TH100 - 1.png';
-import imageTH300 from '../../public/assets/TH300.png';
-import imageTH310 from '../../public/assets/TH310.png';
 
 import Image from "next/image";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTrigger } from "./ui/dialog";
 import { DialogTitle } from "@radix-ui/react-dialog";
-import { StaticImport } from "next/dist/shared/lib/get-img-props";
-
-type FeatureText = {
-  title: string;
-  description: string;
-  href?: string;
-  cta?: string;
-  learnMore?: string;
-  image?: string | StaticImport;
-  capacity?: string;
-  productivity?: string;
-  battery?: string;
-};
-
-const featureText: FeatureText[] = [
-  {
-    title: "TH100",
-    href: "/",
-    description:
-      "A limpadora TH 100 está disponível em duas configurações, que se adaptam perfeitamente às necessidades do seu negócio.",
-    cta: "Solicite um orçamento",
-    learnMore: "Saiba Mais",
-    image: imageTH100.src,
-    capacity: 'Tanques de 3.5/4.5L',
-    productivity: 'Produtividade de 1000 m²/h',
-    battery: 'Autonomia de 1.5 horas'
-  },
-  {
-    title: "TH300",
-    href: "/",
-    description:
-      "xxxxxxxxxxxxxxxxxxxxxx",
-    cta: "Solicite um orçamento",
-    learnMore: "Saiba Mais",
-    image: imageTH300.src,
-    capacity: 'Tanque de 60L',
-    productivity: 'Produtividade de 2000m²/h',
-    battery: 'Autonima de 4 à 5 horas'
-  },
-  {
-    title: "TH310",
-    href: "/",
-    description:
-      "xxxxxxxxxxxxxxxxxxxxx",
-    cta: "Solicite um orçamento",
-    learnMore: "Saiba Mais",
-    image: imageTH310.src,
-    capacity: 'Tanque de 55L',
-    productivity: 'Produtividade de 3000m²/h',
-    battery: 'Autonomia de 4 à 5 horas'
-  },
-  {
-    title: "TH700",
-    href: "/",
-    description:
-      "xxxxxxxxxxxxxxxxxxxxx",
-    cta: "Solicite um orçamento",
-    learnMore: "Saiba Mais",
-    capacity: 'Tanque de 100 | 110 litros',
-    productivity: 'Produtividade de 3000 m²/h',
-    battery: 'Autonomia de 3 à 4 horas'
-  },
-  {
-    title: "TH800",
-    href: "/",
-    description:
-      "xxxxxxxxxxxxxxxxxxxxxxx",
-    cta: "Solicite um orçamento",
-    learnMore: "Saiba Mais",
-    capacity: 'Tanques de 90 | 100 litros',
-    productivity: 'Produtividade de 3000 m²/h',
-    battery: 'Autonomia de 3 à 4 horas'
-  },
-  {
-    title: "TH900",
-    href: "/",
-    description:
-      "xxxxxxxxxxxxxxxxxxxxxx",
-    cta: "Solicite um orçamento",
-    learnMore: "Saiba Mais",
-    capacity: 'Tanques de 120|130 litros',
-    productivity: 'Produtividade de 3500 m²/h',
-    battery: 'Autonomia de 3 à 4 horas'
-  },
-  {
-    title: "TH1000",
-    href: "/",
-    description:
-      "xxxxxxxxxxxxxxxxxxxxx",
-    cta: "Solicite um orçamento",
-    learnMore: "Saiba Mais",
-    capacity: 'Tanques de 155 | 170 litros',
-    productivity: 'Produtividade de 4500 m²/h',
-    battery: 'Autonomia de 3 à 4 horas'
-  },
-  {
-    title: "TH1200",
-    href: "/",
-    description:
-      "xxxxxxxxxxxxxxxxxxxxx",
-    cta: "Solicite um orçamento",
-    learnMore: "Saiba Mais",
-    capacity: 'Tanques de 245 | 266 litros',
-    productivity: 'Produtividade de 6000 m²/h',
-    battery: 'Autonomia de 6 à 8 horas'
-  },
-  {
-    title: "TH2000",
-    href: "/",
-    description:
-      "xxxxxxxxxxxxxxxxxxxxx",
-    cta: "Solicite um orçamento",
-    learnMore: "Saiba Mais",
-    capacity: 'Tanques de 390 | 400 litros',
-    productivity: 'Produtividade de 8000 m²/h',
-    battery: 'Autonomia de 6 à 8 horas'
-  },
-];
+import {featureMachineText} from './feature/machines-features';
+import { FeatureText } from "./feature/feature-text.interface";
 
 const renderFeatureItem = (feature: FeatureText) => (
   <Dialog key={feature.title}>
@@ -231,7 +112,7 @@ const Feature = () => {
           </p>
 
           <div className="mt-12 grid gap-12 md:mt-4 md:grid-cols-3">
-            {featureText.map(renderFeatureItem)}
+            {featureMachineText.map(renderFeatureItem)}
           </div>
         </div>
       </Container>
@@ -268,7 +149,7 @@ const Feature = () => {
           </p>
           <div className="not-prose flex items-center gap-2">
             <Button className="w-fit" asChild style={{ backgroundColor: '#2B418D' }}>
-              <Link href="#">Confira as peças disponíveis</Link>
+              <Link href="/pecas-de-reposicao">Confira as peças disponíveis</Link>
             </Button> 
           </div>
         </div>
