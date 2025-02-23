@@ -1,4 +1,4 @@
-import { FeatureText } from "./feature-text.interface";
+import { FeatureText } from "./interfaces/feature-text.interface";
 
 import imageTH100 from '../../../public/assets/TH100 - 1.png';
 import imageTH300 from '../../../public/assets/TH300.png';

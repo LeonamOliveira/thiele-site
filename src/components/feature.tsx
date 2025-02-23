@@ -13,7 +13,7 @@ import Image from "next/image";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTrigger } from "./ui/dialog";
 import { DialogTitle } from "@radix-ui/react-dialog";
 import {featureMachineText} from './feature/machines-features';
-import { FeatureText } from "./feature/feature-text.interface";
+import { FeatureText } from "./feature/interfaces/feature-text.interface";
 
 const renderFeatureItem = (feature: FeatureText) => (
   <Dialog key={feature.title}>
@@ -86,7 +86,7 @@ const Feature = () => {
           </p>
           <div className="not-prose flex items-center gap-2">
             <Button className="w-fit" asChild style={{ backgroundColor: '#2B418D' }}>
-              <Link href="#">Solicite um Orçamento</Link>
+              <a rel="noopener noreferrer" href="wa.me/+?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20essa%20pe%C3%A7a%20de%20reposi%C3%A7%C3%A3o." target="_blank">Solicite um Orçamento</a>
             </Button> 
           </div>
         </div>
