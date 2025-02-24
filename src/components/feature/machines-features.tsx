@@ -5,7 +5,7 @@ import imageTH300 from '../../../public/assets/TH300.png';
 import imageTH310 from '../../../public/assets/TH310.png';
 import imageTH700 from '../../../public/assets/TH700 - 1.png';
 import imageTH800 from '../../../public/assets/TH800 - 1.png';
-import imageTH900 from '../../../public/assets/TH900 - 1.png';
+import imageTH900 from '../../../public/assets/TH900 - 2.png';
 import imageTH1000 from '../../../public/assets/TH1000 - 1.png';
 import imageTH1200 from '../../../public/assets/TH1200 - 1.png';
 import imageTH2000 from '../../../public/assets/TH2000 - 1.png';

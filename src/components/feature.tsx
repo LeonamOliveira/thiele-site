@@ -67,7 +67,7 @@ const renderFeatureItem = (feature: FeatureText) => (
   </Dialog>
 )
 
-const Feature = () => {
+const MachineFeature = () => {
   return (
     <Section className="w-full ">
       <Container className="border-b grid items-stretch md:grid-cols-2 md:gap-12">
@@ -165,4 +165,4 @@ const Feature = () => {
   );
 };
 
-export default Feature;
+export default MachineFeature;
