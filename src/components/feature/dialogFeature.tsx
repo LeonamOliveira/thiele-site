@@ -19,12 +19,32 @@ const FeatureDialog: React.FC<FeatureDialogProps> = ({ feature }) => {
             <h4 className="text-xl text-primary" style={{ color: "#FFFFFF" }}>
               <strong>{feature.title}</strong>
             </h4>
-            <p className="text-base opacity-75" style={{ color: "#FFFFFF" }}>{feature.description}</p>
-            {feature.image && (
-              <div className="grid gap-4">
-                <Image src={feature.image} width={500} height={300} alt="Imagem" />
-              </div>
-            )}
+            <p className="text-base" style={{ color: "#FFFFFF" }}>{feature.description}</p>
+            <div style={{ background: "#F2F2F2"}}>
+              {feature.image && (
+                <div className="grid gap-4">
+                  <Image src={feature.image} width={500} height={300} alt="Imagem" />
+                </div>
+              )}
+              {feature.capacity && (
+                <>
+                  <p className="font-bold my-0 leading-3" >Capacidade</p>
+                  <p className="text-gray-600 my-0 leading-3">{feature.capacity}</p>
+                </>
+              )}
+              {feature.productivity && (
+                <>
+                  <p className="font-bold leading-3">Produtividade</p>
+                  <p className="text-gray-600 leading-3">{feature.productivity}</p>
+                </>
+              )}
+              {feature.battery && (
+                <>
+                  <p className="font-bold leading-3">Bateria</p>
+                  <p className="text-gray-600 leading-3">{feature.battery}</p>
+                </>
+              )}
+            </div>
           </div>
         </div>
       </DialogTrigger>
@@ -37,24 +57,7 @@ const FeatureDialog: React.FC<FeatureDialogProps> = ({ feature }) => {
             style={{ backgroundColor: "#F2F2F2" }}
           >
             {feature.image && <Image src={feature.image} width={500} height={300} alt="Imagem" />}
-            {feature.capacity && (
-              <>
-                <p className="font-bold my-0 leading-3">Capacidade</p>
-                <p className="text-gray-600 my-0 leading-3">{feature.capacity}</p>
-              </>
-            )}
-            {feature.productivity && (
-              <>
-                <p className="font-bold leading-3">Produtividade</p>
-                <p className="text-gray-600 leading-3">{feature.productivity}</p>
-              </>
-            )}
-            {feature.battery && (
-              <>
-                <p className="font-bold leading-3">Bateria</p>
-                <p className="text-gray-600 leading-3">{feature.battery}</p>
-              </>
-            )}
+            
             {feature.cta && (
               <div className="grid gap-4 bg-[#2B418D]">
                 <Button className="rounded-md bg-[#2B418D]">{feature.cta}</Button>

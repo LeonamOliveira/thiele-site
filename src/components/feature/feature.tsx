@@ -8,8 +8,8 @@ import { FeatureProps } from "./interfaces/feature-props.interface";
 const Feature: React.FC<FeatureProps> = ({ title, description, features = [], media, textButton, children }) => {
   return (
     <Section className="w-full">
-      <Container className="border-b grid items-stretch md:grid-cols-2 md:gap-12">
-        <div className="flex flex-col gap-6 py-8">
+      <Container className="grid items-stretch md:grid-cols-2 md:gap-12">
+        <div className="flex flex-col gap-3 py-2">
           <h1 className="!my-0" style={{ fontWeight: 300, fontSize: '56px', lineHeight: '62px' }}>
             {title}
           </h1>
@@ -21,15 +21,14 @@ const Feature: React.FC<FeatureProps> = ({ title, description, features = [], me
             </Button>
           </div>
         </div>
-        <div className="not-prose relative flex h-96 overflow-hidden rounded-lg w-full">
+        <div className="not-prose relative flex h-80 overflow-hidden rounded-lg w-full">
           {media ? media : <CarouselDemo />}
         </div>
       </Container>
-      <div className="w-full h-[50px] bg-blue-900 px-4 md:px-8 mt-[-20px] w-100"></div>
       <Container className="not-prose">
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-4">
           {children}
-          <div className="mt-12 grid gap-12 md:mt-4 md:grid-cols-3">
+          <div className="mt-4 grid gap-2 md:mt-4 md:grid-cols-3">
             {features.map((feature) => (
               <FeatureDialog key={feature.title} feature={feature} />
             ))}
