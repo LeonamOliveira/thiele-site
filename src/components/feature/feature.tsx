@@ -5,7 +5,7 @@ import { Container, Section } from "../craft";
 import { CarouselDemo } from "../carousel";
 import { FeatureProps } from "./interfaces/feature-props.interface";
 
-const Feature: React.FC<FeatureProps> = ({ title, description, features, media, children }) => {
+const Feature: React.FC<FeatureProps> = ({ title, description, features = [], media, textButton, children }) => {
   return (
     <Section className="w-full">
       <Container className="border-b grid items-stretch md:grid-cols-2 md:gap-12">
@@ -17,7 +17,7 @@ const Feature: React.FC<FeatureProps> = ({ title, description, features, media, 
             <p key={index} className="font-light leading-[1.4] opacity-70">{line}</p>
           ))}          <div className="not-prose flex items-center gap-2">
             <Button className="w-fit" asChild style={{ backgroundColor: '#2B418D' }}>
-              <a href="wa.me/+?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank">Solicite um Orçamento</a>
+              <a href="wa.me/+?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank">{textButton}</a>
             </Button>
           </div>
         </div>

@@ -4,6 +4,9 @@ import Footer from "./footer";
 import Feature from "../components/feature/feature";
 import { featureMachineText } from "@/components/feature/machines-features";
 import { CarouselDemo } from "@/components/carousel";
+import imageChumbo from '../../public/assets/chumbo.png';
+import imageReposicao from '../../public/assets/reposicao.jpeg';
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -17,7 +20,25 @@ export default function Home() {
           Tecnologia moderna, sem cabos ou combustão, para limpeza eficiente e sustentável.
           Mais autonomia, praticidade e potência no seu trabalho.`}
         features={featureMachineText} 
-        media={<CarouselDemo />}/>
+        media={<CarouselDemo />}
+        textButton="Solicite um orçamento"
+        />
+      <Feature 
+        title="Transforme sua máquina de chumbo ácido em lítio"
+        description={`
+          Revolucione seus resultados com a tecnologia que está transformando o mercado.
+        `}
+        media={<Image src={imageChumbo} width={500} height={500} alt="Lavadora"/>}
+        textButton="Adquira seu kit agora"
+        />
+      <Feature 
+        title="Peças de Reposição"
+        description={`
+          Fabricadas com os mais altos padrões, nossas peças garantem a durabilidade e o funcionamento perfeito da sua máquina, evitando paradas e prolongando sua vida útil.  
+        `}
+        media={<Image src={imageReposicao} width={400} height={40} alt="Reposição"/>}
+        textButton="Confira as peças disponíveis"
+      />
       <Footer />
     </div>
   );

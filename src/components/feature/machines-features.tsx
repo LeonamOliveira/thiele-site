@@ -100,7 +100,7 @@ export const featureMachineText: FeatureText[] = [
       title: "TH1200",
       href: "/",
       description:
-        "xxxxxxxxxxxxxxxxxxxxx",
+        "Limpeza de alta escala com a TH 12000.  Produtividade de 6000 m²/h, tanques de 245L/266L para resultados impecáveis em grandes espaços.",
       cta: "Solicite um orçamento",
       learnMore: "Saiba Mais",
       image: imageTH1200.src,
@@ -112,7 +112,7 @@ export const featureMachineText: FeatureText[] = [
       title: "TH2000",
       href: "/",
       description:
-        "xxxxxxxxxxxxxxxxxxxxx",
+        "A solução profissional para limpeza de grandes áreas.Produtividade de8000 m²/h, tanques de 390L/400L para resultados impecáveis em grandes espaços.",
       cta: "Solicite um orçamento",
       learnMore: "Saiba Mais",
       image: imageTH2000.src,
