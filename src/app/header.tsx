@@ -1,55 +1,48 @@
 import Image from "next/image";
-import ImageMachine from '../../public/assets/Máqiuinas.png';
-import ImageLogo from '../../public/assets/thiele-icon.png';
-import {
-    Carousel,
-    CarouselContent,
-    CarouselItem,
-    CarouselNext,
-    CarouselPrevious,
-  } from "@/components/ui/carousel"
-  
+import ImageLogo from "../../public/assets/thiele-icon.png";
+
 export default function Header() {
-    return (
-        <>
-        <header className="w-full bg-background border-border mt-12">
-        <div style={{backgroundColor: '#2B418D'}} className="container-fluid flex flex-col md:flex-row items-center justify-between py-4">
-            <div className="text-left w-full md:w-auto">
-                <p className="text-center" style={{color: '#FFFFFF'}}>
-                    Central de atendimento: (11) 93011-1440
-                </p>
-            </div>
-            <div className="text-right w-full md:w-auto"> 
-                <p className="" style={{color: '#FFFFFF'}}>
-                    comercial@thiele.com.br
-                </p>
-            </div>
+  return (
+    <header className="w-full bg-background border-b border-border">
+      <div className="bg-[#2B418D] text-white py-2">
+        <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-4 text-sm">
+          <p className="text-center md:text-left">
+            <strong>Central de atendimento: (11) 9xxxx-1xxx</strong>
+          </p>
+          <p className="text-center md:text-right">
+            <strong>xxx@xxx.com.br</strong>
+          </p>
         </div>
-                <Image
-                    src={ImageLogo}
-                    width={350}
-                    height={200}
-                    alt="Máquinas"                
-                ></Image>
-        </header>
-        <div>
-            <Carousel>
-                <CarouselContent>
-                    <CarouselItem>
-                        <Image
-                            src={ImageMachine}
-                            width={700}
-                            height={412}
-                            alt="Máquinas"                
-                        >
-                        </Image>
-                    </CarouselItem>                  
-                    </CarouselContent>
-                    <CarouselPrevious />
-                <CarouselNext />
-            </Carousel>
+      </div>
+
+      <div className="w-full py-6">
+        <div className="container mx-auto px-4 flex flex-col items-center md:items-start gap-6 md:gap-12">
+          <div className="flex justify-center md:justify-start w-full md:w-auto">
+            <Image
+              src={ImageLogo}
+              width={250}
+              height={150}
+              alt="Logo da empresa Thiele"
+              priority
+            />
+          </div>
         </div>
-        
-        </>
-    )
+      </div>
+      <div className="w-full bg-[#2B418D]  py-6">
+        <div className="container mx-auto px-4 flex flex-col items-center md:items-start gap-6 md:gap-12">
+          <div className="flex flex-col md:flex-row items-center justify-between w-full gap-6 md:gap-12">
+            <p className="text-white text-lg md:text-xl font-medium text-center md:text-left leading-snug">
+              <strong>Entrega em todo o território nacional</strong>
+            </p>
+            <p className="text-white text-lg md:text-xl font-medium text-center md:text-left leading-snug">
+              <strong>Central de Atendimento 24 horas</strong>
+            </p>
+            <p className="text-white text-lg md:text-xl font-medium text-center md:text-left leading-snug">
+              <strong>Suporte especializado no território nacional</strong>
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+  );
 }
