@@ -1,5 +1,6 @@
 import Image from "next/image";
 import ImageLogo from "../../public/assets/thiele-icon.png";
+import ImageMaquinas from "../../public/assets/Máqiuinas.png";
 
 export default function Header() {
   return (
@@ -7,10 +8,10 @@ export default function Header() {
       <div className="bg-[#2B418D] text-white py-2">
         <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-4 text-sm">
           <p className="text-center md:text-left">
-            <strong>Central de atendimento: (11) 9xxxx-1xxx</strong>
+            <strong>Central de atendimento: (11) 93011-1440</strong>
           </p>
           <p className="text-center md:text-right">
-            <strong>xxx@xxx.com.br</strong>
+            <strong>comercial@thiele.com.br</strong>
           </p>
         </div>
       </div>
@@ -22,6 +23,18 @@ export default function Header() {
               src={ImageLogo}
               width={250}
               height={150}
+              alt="Logo da empresa Thiele"
+              priority
+            />
+          </div>
+        </div>
+      </div>
+      <div className="w-full py-6">
+        <div className="container mx-auto px-4 flex flex-col items-center md:items-center gap-6 md:gap-12">
+          <div className="flex justify-center md:justify-center w-full md:w-auto">
+            <Image
+              src={ImageMaquinas}
+              width={736}
               alt="Logo da empresa Thiele"
               priority
             />

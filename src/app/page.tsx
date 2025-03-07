@@ -15,7 +15,6 @@ export default function Home() {
   return (
     <>
       <Header />
-      {/* <Image src={ImageMaquinas} width={500} height={300} alt="Image principal"/> */}
       <Feature
         title="Conheça nossas máquinas"
         description={`

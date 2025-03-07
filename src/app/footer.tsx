@@ -9,15 +9,19 @@ export default function Footer() {
           <p className="font-bold text-lg mb-2">Central de Atendimento</p>
           <div className="text-white">
             <p>Televendas</p>
-            <p className="font-bold text-lg">(11) 9xxxx-1xxx</p>
+            <p className="font-bold text-lg">(11) 93011-1440</p>
             <p>E-mail:</p>
-            <p className="font-bold">xxxxx@xxxx.com.br</p>
+            <p className="font-bold">comercial@thiele.com.br</p>
           </div>
         </div>
         <div className="flex flex-col items-start text-sm">
           <p className="font-bold text-lg mb-2">Indústrias Thiele</p>
           <div className="text-white">
-            <p>Estr. xxxl xxxx - Tatuí, (SP-129), xxx-AP, xxx-SP, 1xxxx-000</p>
+            <p>Estr. Estadual Boituva - Tatuí, <br/>
+            (SP-129), <br/>
+            6118-AP, <br/>
+            Boituva-SP, <br/> 
+            18550-000</p>
             <p>Horário de Atendimento: das 8h às 18h</p>
           </div>
         </div>
