@@ -18,51 +18,48 @@ const FeatureDialog: React.FC<FeatureDialogProps> = ({ feature }) => {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <div
-          className="flex flex-col justify-between gap-6 rounded-lg border p-6 transition-all hover:-mt-2 hover:mb-2"
-          style={{ backgroundColor: "#2B418D" }}
-        >
-          <div className="grid gap-4" style={{ backgroundColor: "#2B418D" }}>
-            <h4 className="text-xl text-primary" style={{ color: "#FFFFFF" }}>
-              <strong>{feature.title}</strong>
-            </h4>
-            <p className="text-base" style={{ color: "#FFFFFF" }}>
-              {feature.description}
-            </p>
-            <div style={{ background: "#F2F2F2" }}>
-              {feature.image && (
-                <div className="grid gap-4">
-                  <Image
-                    src={feature.image}
-                    width={500}
-                    height={300}
-                    alt="Imagem"
-                  />
-                </div>
-              )}
-              {feature.capacity && (
-                <>
-                  <p className="font-bold my-0 leading-3">Capacidade</p>
-                  <p className="text-gray-600 my-0 leading-3">
-                    {feature.capacity}
-                  </p>
-                </>
-              )}
-              {feature.productivity && (
-                <>
-                  <p className="font-bold leading-3">Produtividade</p>
-                  <p className="text-gray-600 leading-3">
-                    {feature.productivity}
-                  </p>
-                </>
-              )}
-              {feature.battery && (
-                <>
-                  <p className="font-bold leading-3">Bateria</p>
-                  <p className="text-gray-600 leading-3">{feature.battery}</p>
-                </>
-              )}
-            </div>
+        <div className="flex flex-col justify-between gap-4 rounded-lg border p-4 md:p-5 transition-all hover:-mt-1 hover:mb-1 bg-[#2B418D] text-white">
+          <div className="grid gap-3 text-left">
+            <h4 className="text-lg font-bold">{feature.title}</h4>
+
+            <p className="text-sm">{feature.description}</p>
+
+            {feature.image && (
+              <div className="w-full">
+                <Image
+                  src={feature.image}
+                  width={500}
+                  height={250}
+                  alt="Imagem"
+                  className="w-full h-[180px] md:h-[250px] object-cover rounded-md"
+                />
+              </div>
+            )}
+
+            {(feature.capacity || feature.productivity || feature.battery) && (
+              <div className="bg-gray-200 p-3 rounded-md text-gray-800 space-y-3 w-full">
+                {feature.capacity && (
+                  <div>
+                    <p className="font-bold text-base">Capacidade</p>
+                    <p className="text-gray-600 text-sm">{feature.capacity}</p>
+                  </div>
+                )}
+                {feature.productivity && (
+                  <div>
+                    <p className="font-bold text-base">Produtividade</p>
+                    <p className="text-gray-600 text-sm">
+                      {feature.productivity}
+                    </p>
+                  </div>
+                )}
+                {feature.battery && (
+                  <div>
+                    <p className="font-bold text-base">Bateria</p>
+                    <p className="text-gray-600 text-sm">{feature.battery}</p>
+                  </div>
+                )}
+              </div>
+            )}
           </div>
         </div>
       </DialogTrigger>

@@ -17,11 +17,13 @@ export default function Footer() {
         <div className="flex flex-col items-start text-sm">
           <p className="font-bold text-lg mb-2">Indústrias Thiele</p>
           <div className="text-white">
-            <p>Estr. Estadual Boituva - Tatuí, <br/>
-            (SP-129), <br/>
-            6118-AP, <br/>
-            Boituva-SP, <br/> 
-            18550-000</p>
+            <p>
+              Estr. Estadual Boituva - Tatuí, <br />
+              (SP-129), <br />
+              6118-AP, <br />
+              Boituva-SP, <br />
+              18550-000
+            </p>
             <p>Horário de Atendimento: das 8h às 18h</p>
           </div>
         </div>

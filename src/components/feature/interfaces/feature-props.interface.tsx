@@ -7,4 +7,5 @@ export interface FeatureProps {
   children?: React.ReactNode;
   media?: React.ReactNode;
   textButton?: string;
+  link?: string;
 }

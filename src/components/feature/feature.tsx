@@ -10,6 +10,7 @@ const Feature: React.FC<FeatureProps> = ({
   features = [],
   media,
   textButton,
+  link,
   children,
 }) => {
   return (
@@ -33,10 +34,7 @@ const Feature: React.FC<FeatureProps> = ({
               asChild
               style={{ backgroundColor: "#2B418D" }}
             >
-              <a
-                href="wa.me/+?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es."
-                target="_blank"
-              >
+              <a href={link} target="_blank">
                 {textButton}
               </a>
             </Button>

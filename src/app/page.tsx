@@ -23,6 +23,7 @@ export default function Home() {
         features={featureMachineText}
         media={<CarouselMachine images={imagens} />}
         textButton="Solicite um orçamento"
+        link="#"
       />
       <Feature
         title="Transforme sua máquina de chumbo ácido em lítio"
@@ -33,6 +34,7 @@ export default function Home() {
           <Image src={imageChumbo} width={500} height={500} alt="Lavadora" />
         }
         textButton="Adquira seu kit agora"
+        link="#"
       />
       <Feature
         title="Peças de Reposição"
@@ -43,6 +45,7 @@ export default function Home() {
           <Image src={imageReposicao} width={400} height={40} alt="Reposição" />
         }
         textButton="Confira as peças disponíveis"
+        link="#pecas-de-reposicao"
       />
       <Footer />
     </>
