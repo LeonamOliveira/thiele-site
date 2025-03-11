@@ -45,7 +45,7 @@ export default function Home() {
           <Image src={imageReposicao} width={400} height={40} alt="Reposição" />
         }
         textButton="Confira as peças disponíveis"
-        link="#pecas-de-reposicao"
+        link="pecas-de-reposicao"
       />
       <Footer />
     </>

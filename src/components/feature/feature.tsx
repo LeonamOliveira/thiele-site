@@ -29,15 +29,17 @@ const Feature: React.FC<FeatureProps> = ({
             </p>
           ))}{" "}
           <div className="not-prose flex items-center gap-2">
-            <Button
-              className="w-fit"
-              asChild
-              style={{ backgroundColor: "#2B418D" }}
-            >
-              <a href={link} target="_blank">
-                {textButton}
-              </a>
-            </Button>
+            {textButton?.trim() && (
+              <Button
+                className="w-fit"
+                asChild
+                style={{ backgroundColor: "#2B418D" }}
+              >
+                <a href={link} target="_blank">
+                  {textButton}
+                </a>
+              </Button>
+            )}
           </div>
         </div>
         <div className="not-prose relative flex h-80 overflow-hidden rounded-lg w-full">
