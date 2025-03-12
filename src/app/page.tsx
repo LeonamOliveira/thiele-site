@@ -15,14 +15,14 @@ export default function Home() {
     <>
       <Header />
       <Feature
-        title="Conheça nossas máquinas"
+        title="Conheça as lavadoras Thiele"
         description={`
           Tecnologia moderna para limpeza eficiente e sustentável. 
           Mais autonomia, praticidade e potência no seu trabalho.`}
         features={featureMachineText}
         media={<CarouselMachine images={imagens} />}
         textButton="Solicite um orçamento"
-        link="#"
+        link="http://wa.me/+11930111440?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es"
       />
       <Feature
         title="Transforme sua máquina de chumbo ácido em lítio"
@@ -33,7 +33,7 @@ export default function Home() {
           <Image src={imageChumbo} width={500} height={500} alt="Lavadora" />
         }
         textButton="Adquira seu kit agora"
-        link="#"
+        link="kit-transformador"
       />
       <Feature
         title="Peças de Reposição"
