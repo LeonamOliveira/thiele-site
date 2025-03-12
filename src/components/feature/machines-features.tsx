@@ -87,7 +87,7 @@ export const featureMachineText: FeatureText[] = [
     title: "TH1000",
     href: "/",
     description:
-      "Máxima performance em limpeza profissional. Produtividade de 4500 m²/h, tanques de 150L/165L e tração potente para grandes áreas e alta pressão (4.3Mpa).",
+      "Máxima performance em limpeza profissional. Produtividade de 4500 m²/h, tanques de 150L/165L e tração potente para grandes áreas e alta pressão.",
     cta: "Solicite um orçamento",
     learnMore: "Saiba Mais",
     image: imageTH1000.src,

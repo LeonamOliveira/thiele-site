@@ -11,7 +11,6 @@ import TH800 from "../../public/assets/TH800 - 1.png";
 import TH1000 from "../../public/assets/TH1000 - 1.png";
 export default function Home() {
   const imagens = [TH300, TH800, TH1000];
-
   return (
     <>
       <Header />

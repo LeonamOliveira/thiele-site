@@ -25,7 +25,7 @@ const FeatureDialog: React.FC<FeatureDialogProps> = ({ feature }) => {
             <p className="text-sm">{feature.description}</p>
 
             {feature.image && (
-              <div className="w-full">
+              <div className="w-full bg-gray-200  rounded-md ">
                 <Image
                   src={feature.image}
                   width={500}
@@ -37,7 +37,7 @@ const FeatureDialog: React.FC<FeatureDialogProps> = ({ feature }) => {
             )}
 
             {(feature.capacity || feature.productivity || feature.battery) && (
-              <div className="bg-gray-200 p-3 rounded-md text-gray-800 space-y-3 w-full">
+              <div className="bg-gray-200 p-3 rounded-md text-gray-800 space-y-3 w-full" >
                 {feature.capacity && (
                   <div>
                     <p className="font-bold text-base">Capacidade</p>

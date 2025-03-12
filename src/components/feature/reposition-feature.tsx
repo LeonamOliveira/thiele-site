@@ -9,9 +9,8 @@ export const featureRepositionText: FeatureText[] = [
     title: "RODO",
     href: "/",
     description:
-      "Máxima performance em limpeza profissional. Produtividade de 4500 m²/h, tanques de 150L/165L e tração potente para grandes áreas e alta pressão (4.3Mpa).",
+      "Máxima performance em limpeza profissional.",
     cta: "Solicite um orçamento",
-    learnMore: "Saiba Mais",
     image: imageTH1000.src,
     capacity: "Tanques de 155 | 170 litros",
     productivity: "Produtividade de 4500 m²/h",
@@ -20,9 +19,8 @@ export const featureRepositionText: FeatureText[] = [
   {
     title: "MANGUEIRA",
     href: "/",
-    description: "xxxxxxxxxxxxxxxxxxxxx",
+    description: "Mangueira Industrial de Alta Pressão para Lavadoras de Piso Thiele.",
     cta: "Solicite um orçamento",
-    learnMore: "Saiba Mais",
     image: imageTH1200.src,
     capacity: "Tanques de 245 | 266 litros",
     productivity: "Produtividade de 6000 m²/h",
@@ -31,9 +29,8 @@ export const featureRepositionText: FeatureText[] = [
   {
     title: "BORRACHA",
     href: "/",
-    description: "xxxxxxxxxxxxxxxxxxxxx",
+    description: "Borracha de Reposição de Alta Durabilidade para Lavadoras Thiele.",
     cta: "Solicite um orçamento",
-    learnMore: "Saiba Mais",
     image: imageTH2000.src,
     capacity: "Tanques de 390 | 400 litros",
     productivity: "Produtividade de 8000 m²/h",

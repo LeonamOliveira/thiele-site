@@ -1,4 +1,4 @@
-import FeatureDialog from "./dialogFeature";
+import FeatureDialog from "./dialogMachine";
 import { Button } from "@/components/ui/button";
 
 import { Container, Section } from "../craft";
@@ -42,7 +42,7 @@ const Feature: React.FC<FeatureProps> = ({
             )}
           </div>
         </div>
-        <div className="not-prose relative flex h-80 overflow-hidden rounded-lg w-full">
+        <div className="not-prose relative flex h-80 overflow-hidden rounded-lg w-full" >
           {media}
         </div>
       </Container>
