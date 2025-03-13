@@ -5,6 +5,7 @@ import {
   DialogHeader,
   DialogTitle,
   DialogDescription,
+  DialogFooter,
 } from "@/components/ui/dialog";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
@@ -64,31 +65,32 @@ const FeatureDialog: React.FC<FeatureDialogProps> = ({ feature }) => {
         </div>
       </DialogTrigger>
       <DialogContent>
-        <DialogHeader>
-          <DialogTitle>{feature.title}</DialogTitle>
-          <DialogDescription>{feature.description}</DialogDescription>
-          <div
-            className="flex flex-col justify-between gap-6 rounded-lg border p-6"
-            style={{ backgroundColor: "#F2F2F2" }}
-          >
-            {feature.image && (
-              <Image
-                src={feature.image}
-                width={500}
-                height={300}
-                alt="Imagem"
-              />
-            )}
-
-            {feature.cta && (
-              <div className="grid gap-4 bg-[#2B418D]">
-                <Button className="rounded-md bg-[#2B418D]">
-                  {feature.cta}
+          <DialogHeader>
+            <DialogTitle>{feature.title}</DialogTitle>
+            <DialogDescription>{feature.description}</DialogDescription>
+            <div
+              className="flex flex-col justify-between gap-6 border p-6"
+              style={{ backgroundColor: "#F2F2F2" }}
+            >
+              {feature.image && (
+                <Image
+                  src={feature.image}
+                  width={500}
+                  height={300}
+                  alt="Imagem"
+                />
+              )}
+            </div>
+          </DialogHeader>
+        <DialogFooter>
+          {feature.cta && (
+              <div className="grid gap-4">
+                <Button className="bg-[#2B418D] hover:bg-[#1E306E] text-white font-semibold text-sm px-6 py-3 rounded-lg shadow-md transition-all duration-300 transform hover:scale-105">
+                  {feature.cta} 
                 </Button>
               </div>
             )}
-          </div>
-        </DialogHeader>
+        </DialogFooter>
       </DialogContent>
     </Dialog>
   );

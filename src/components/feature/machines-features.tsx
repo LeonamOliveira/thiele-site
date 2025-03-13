@@ -27,7 +27,7 @@ export const featureMachineText: FeatureText[] = [
     title: "TH300",
     href: "/",
     description:
-      "Limpeza profissional para grandes áreas. Alta produtividade (2500 m²/h) e autonomia de 4-5 horas. Ideal para empresas que buscam eficiência e resultados impecáveis.",
+      "Limpeza profissional para grandes áreas. Alta produtividade (2500 m²/h) e autonomia de 4-5 horas. Ideal para empresas que buscam eficiência.",
     cta: "Solicite um orçamento",
     learnMore: "Saiba Mais",
     image: imageTH300.src,
@@ -99,7 +99,7 @@ export const featureMachineText: FeatureText[] = [
     title: "TH1200",
     href: "/",
     description:
-      "Limpeza de alta escala com a TH 12000.  Produtividade de 6000 m²/h, tanques de 245L/266L para resultados impecáveis em grandes espaços.",
+      "Limpeza de alta escala com a TH 12000.  Produtividade de 6000 m²/h, tanques de 245L/266L para resultados impecáveis em grandes espaços, alta performance e eficiente.",
     cta: "Solicite um orçamento",
     learnMore: "Saiba Mais",
     image: imageTH1200.src,
@@ -111,7 +111,7 @@ export const featureMachineText: FeatureText[] = [
     title: "TH2000",
     href: "/",
     description:
-      "A solução profissional para limpeza de grandes áreas.Produtividade de8000 m²/h, tanques de 390L/400L para resultados impecáveis em grandes espaços.",
+      "A solução profissional para limpeza de grandes áreas. Produtividade de8000 m²/h, tanques de 390L/400L para resultados impecáveis em grandes espaços.",
     cta: "Solicite um orçamento",
     learnMore: "Saiba Mais",
     image: imageTH2000.src,
