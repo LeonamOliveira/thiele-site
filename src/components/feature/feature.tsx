@@ -1,6 +1,5 @@
 import FeatureDialog from "./dialogMachine";
 import { Button } from "@/components/ui/button";
-
 import { Container, Section } from "../craft";
 import { FeatureProps } from "./interfaces/feature-props.interface";
 

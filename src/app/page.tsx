@@ -22,7 +22,7 @@ export default function Home() {
         features={featureMachineText}
         media={<CarouselMachine images={imagens} />}
         textButton="Solicite um orçamento"
-        link="http://wa.me/+11930111440?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es"
+        link="http://wa.me/+5511930111440?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es"
       />
       <Feature
         title="Transforme sua máquina de chumbo ácido em lítio"
