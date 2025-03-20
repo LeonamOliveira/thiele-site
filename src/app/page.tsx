@@ -2,16 +2,11 @@ import Header from "./header";
 import Footer from "./footer";
 import Feature from "../components/feature/feature";
 import { featureMachineText } from "@/components/feature/machines-features";
-// import { CarouselMachine } from "@/components/carousel";
 import imageChumbo from "../../public/assets/chumbo.png";
 import imageReposicao from "../../public/assets/reposicao.jpeg";
 import Image from "next/image";
-// import TH300 from "../../public/assets/TH300.png";
-// import TH800 from "../../public/assets/TH800 - 1.png";
-// import TH1000 from "../../public/assets/TH1000 - 1.png";
 import CarouselSwiper from "@/components/carousel-swiper";
 export default function Home() {
-  // const imagens = [TH300, TH800, TH1000];
   return (
     <>
       <Header />

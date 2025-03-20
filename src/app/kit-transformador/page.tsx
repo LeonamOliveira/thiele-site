@@ -26,7 +26,9 @@ export default function Home() {
           Autonomia Estendida para Limpeza Industrial. Máxima produtividade e eficiência com baterias de alta performance.
         </p>
         <motion.div whileHover={{ scale: 1.05 }}>
-          <Button className="mt-6" asChild>
+          <Button className="w-fit"
+                asChild
+                style={{ backgroundColor: "#2B418D" }}>
             <a href="http://wa.me/+5511930111440?text=Ol%C3%A1%2C%20eu%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20Kit%20Transformador.">
               Solicite um Orçamento
             </a>
@@ -107,7 +109,9 @@ export default function Home() {
           Entre em contato e descubra como podemos ajudar!
         </p>
         <motion.div whileHover={{ scale: 1.05 }}>
-          <Button className="mt-6" asChild>
+          <Button className="w-fit"
+                asChild
+                style={{ backgroundColor: "#2B418D" }}>
             <a href="http://wa.me/+5511930111440?text=Ol%C3%A1%2C%20eu%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20Kit%20Transformador.">
               Fale Conosco Agora
             </a>
