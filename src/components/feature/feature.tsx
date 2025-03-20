@@ -2,6 +2,7 @@ import FeatureDialog from "./dialogMachine";
 import { Button } from "@/components/ui/button";
 import { Container, Section } from "../craft";
 import { FeatureProps } from "./interfaces/feature-props.interface";
+import Link from "next/link";
 
 const Feature: React.FC<FeatureProps> = ({
   title,
@@ -34,9 +35,9 @@ const Feature: React.FC<FeatureProps> = ({
                 asChild
                 style={{ backgroundColor: "#2B418D" }}
               >
-                <a href={link} target="_blank">
+                <Link href={link ?? "/"}>
                   {textButton}
-                </a>
+                </Link>
               </Button>
             )}
           </div>

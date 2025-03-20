@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import ImageLogo from "../../public/assets/thiele-icon.png";
 import ImageMaquinas from "../../public/assets/Máqiuinas.png";
 import { motion } from "framer-motion";
@@ -15,7 +16,6 @@ export default function Header() {
       transition={{ duration: 0.5 }}
       className="w-full bg-background border-b border-border"
     >
-      {/* Top bar com contato */}
       <div className="bg-[#2B418D] text-white py-2">
         <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-4 text-sm">
           <motion.p 
@@ -37,7 +37,6 @@ export default function Header() {
         </div>
       </div>
 
-      {/* Logo da empresa */}
       <div className="w-full py-6">
         <div className="container mx-auto px-4 flex justify-center md:justify-start">
           <motion.div 
@@ -45,18 +44,19 @@ export default function Header() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
           >
-            <Image
-              src={ImageLogo}
-              width={250}
-              height={150}
-              alt="Logo da empresa Thiele"
-              priority
-            />
+            <Link href="/" passHref>
+              <Image
+                src={ImageLogo}
+                width={250}
+                height={150}
+                alt="Logo da empresa Thiele"
+                priority
+              />
+            </Link>
           </motion.div>
         </div>
       </div>
 
-      {/* Imagem das máquinas */}
       <div className="w-full py-6">
         <div className="container mx-auto px-4 flex justify-center">
           <motion.div 
@@ -74,7 +74,6 @@ export default function Header() {
         </div>
       </div>
 
-      {/* Informações adicionais */}
       <div className="w-full bg-[#2B418D] py-6">
         <div className="container mx-auto px-4">
           <motion.div 
@@ -102,7 +101,6 @@ export default function Header() {
                 >
                   <strong>{text}</strong>
                 </motion.p>
-                {/* Efeito de sublinhado animado */}
                 <motion.div
                   className="absolute left-1/2 bottom-0 w-0 h-[2px] bg-white group-hover:w-full transition-all duration-300"
                   style={{ transform: "translateX(-50%)" }}
