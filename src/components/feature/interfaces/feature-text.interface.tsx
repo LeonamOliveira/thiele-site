@@ -11,4 +11,5 @@ export interface FeatureText {
   productivity?: string;
   battery?: string;
   specifications?: string[];
+  message?: string;
 }
