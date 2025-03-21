@@ -19,7 +19,7 @@ const Feature: React.FC<FeatureProps> = ({
         <div className="flex flex-col gap-3 py-2">
           <h1
             className="!my-0"
-            style={{ fontWeight: 300, fontSize: "56px", lineHeight: "62px" }}
+            style={{ fontWeight: 300, fontSize: "56px", lineHeight: "62px", color: "#6C6C6C" }}
           >
             {title}
           </h1>
