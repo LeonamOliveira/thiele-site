@@ -13,6 +13,7 @@ export default function Home() {
         description={`
           Fabricadas com os mais altos padrões, nossas peças garantem a durabilidade e o funcionamento perfeito da sua máquina, evitando paradas e prolongando sua vida útil.`}
         features={featureRepositionText}
+        barraDePesquisa={true}
       />
       <Footer />
     </div>

@@ -10,7 +10,7 @@ interface FeatureProps {
   id?: string;
   title: string;
   description: string;
-  features?: FeatureText[]; // Ajuste os tipos conforme seu caso
+  features?: FeatureText[]; 
   media?: React.ReactNode;
   textButton?: string;
   link?: string;
