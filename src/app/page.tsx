@@ -6,6 +6,7 @@ import imageChumbo from "../../public/assets/chumbo.png";
 import imageReposicao from "../../public/assets/reposicao.jpeg";
 import Image from "next/image";
 import CarouselSwiper from "@/components/carousel-swiper";
+import { Feedback } from "@/components/feedback";
 export default function Home() {
   return (
     <>
@@ -42,6 +43,7 @@ export default function Home() {
         textButton="Confira as peças disponíveis"
         link="pecas-de-reposicao"
       />
+      <Feedback />
       <Footer />
     </>
   );
