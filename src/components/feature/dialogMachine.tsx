@@ -1,25 +1,16 @@
-import {
-  Dialog,
-  DialogTrigger,
-  DialogContent,
-  DialogHeader,
-  DialogTitle,
-  DialogDescription,
-  DialogFooter,
-} from "@/components/ui/dialog";
 import Image from "next/image";
 import { FeatureText } from "./interfaces/feature-text.interface";
+import Link from "next/link";
 
 interface FeatureDialogProps {
-  feature: FeatureText;
+  feature: FeatureText;  // Certificando-se de que feature tem o tipo correto
 }
 
-
-const FeatureDialog: React.FC<FeatureDialogProps> = ({ feature }) => {  
+const FeatureDialog: React.FC<FeatureDialogProps> = ({ feature }) => {
   return (
-    <Dialog>
-       <DialogTrigger asChild>
-        <div className="flex flex-col justify-between gap-4 rounded-xl border p-5 md:p-6 shadow-lg bg-gradient-to-r from-[#2B418D] to-[#1E306E] text-white cursor-pointer transform transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+    <Link href={`/produtos/${feature.id}`} passHref>
+      <div className="cursor-pointer block rounded-xl border p-5 md:p-6 shadow-lg bg-gradient-to-r from-[#2B418D] to-[#1E306E] text-white transform transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+        <div className="flex flex-col justify-between gap-4">
           <div className="grid gap-2 text-left">
             <h4 className="text-xl font-semibold">{feature.title}</h4>
             <p className="text-sm opacity-80">{feature.description}</p>
@@ -54,44 +45,8 @@ const FeatureDialog: React.FC<FeatureDialogProps> = ({ feature }) => {
             )}
           </div>
         </div>
-      </DialogTrigger>
-
-      <DialogContent className="rounded-xl shadow-2xl bg-white p-6 md:p-8 max-w-lg w-full transform transition-all duration-300 scale-95 opacity-0 data-[state=open]:scale-100 data-[state=open]:opacity-100">
-        <DialogHeader className="relative">
-          <DialogTitle className="text-2xl font-bold text-gray-900">{feature.title}</DialogTitle>
-          <DialogDescription className="text-gray-600 text-sm sm:text-base">{feature.description}</DialogDescription>
-        </DialogHeader>
-
-        {feature.image && (
-          <div className="flex justify-center py-4 transform transition-transform duration-300 hover:scale-105">
-            <Image src={feature.image} width={500} height={300} alt="Imagem" className="rounded-lg shadow-md" />
-          </div>
-        )}
-
-        {feature.specifications && (
-          <div className="mt-4 text-gray-800">
-            <h5 className="text-xl font-semibold mb-2">Especificações Técnicas</h5>
-            <ul className="list-disc pl-5 space-y-2 text-sm sm:text-base">
-              {feature.specifications.map((spec, index) => (
-                <li key={index}>{spec}</li>
-              ))}
-            </ul>
-          </div>
-        )}
-
-        {feature.cta && (
-          <DialogFooter className="flex justify-center mt-6">
-            <a
-              href={`${feature.message}`}
-              target="_blank"
-              className="bg-[#2B418D] hover:bg-[#1E306E] text-white font-semibold text-sm sm:text-base px-5 py-3 rounded-lg shadow-md transition-all duration-300 hover:scale-105"
-            >
-              📩 Solicite um orçamento
-            </a>
-          </DialogFooter>
-        )}
-      </DialogContent>
-    </Dialog>
+      </div>
+    </Link>
   );
 };
 

@@ -1,9 +1,10 @@
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 
 export interface FeatureText {
+  id?: string;
   title: string;
-  description: string;
   href?: string;
+  description: string;
   cta?: string;
   learnMore?: string;
   image?: string | StaticImport;

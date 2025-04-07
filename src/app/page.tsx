@@ -20,6 +20,7 @@ export default function Home() {
         media={<CarouselSwiper />}
         textButton="Solicite um orçamento"
         link="http://wa.me/+5511930111440?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es"
+        barraDePesquisa={true}
       />
       <Feature
         title="Transforme sua máquina de chumbo ácido em lítio"
@@ -31,6 +32,7 @@ export default function Home() {
         }
         textButton="Adquira seu kit agora"
         link="kit-transformador"
+        barraDePesquisa={false}
       />
       <Feature
         title="Peças de Reposição"
@@ -42,6 +44,7 @@ export default function Home() {
         }
         textButton="Confira as peças disponíveis"
         link="pecas-de-reposicao"
+        barraDePesquisa={false}
       />
       <Feedback />
       <Footer />

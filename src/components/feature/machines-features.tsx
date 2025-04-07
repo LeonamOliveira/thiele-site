@@ -12,6 +12,7 @@ import imageTH2000 from "../../../public/assets/TH2000 - 1.png";
 
 export const featureMachineText: FeatureText[] = [
   {
+    id: "1",
     title: "TH100",
     href: "/",
     description:
@@ -34,6 +35,7 @@ export const featureMachineText: FeatureText[] = [
     ]
   },
   {
+    id: "2",
     title: "TH300",
     href: "/",
     description:
@@ -56,6 +58,7 @@ export const featureMachineText: FeatureText[] = [
     ]
   },
   {
+    id: "3",
     title: "TH310",
     href: "/",
     description:
@@ -78,6 +81,7 @@ export const featureMachineText: FeatureText[] = [
     ]
   },
   {
+    id: "4",
     title: "TH700",
     href: "/",
     description:
@@ -100,6 +104,7 @@ export const featureMachineText: FeatureText[] = [
     ]
   },
   {
+    id: "5",
     title: "TH800",
     href: "/",
     description:
@@ -122,6 +127,7 @@ export const featureMachineText: FeatureText[] = [
     ]
   },
   {
+    id: "6",
     title: "TH900",
     href: "/",
     description:
@@ -144,6 +150,7 @@ export const featureMachineText: FeatureText[] = [
     ]
   },
   {
+    id: "7",
     title: "TH1000",
     href: "/",
     description:
@@ -166,6 +173,7 @@ export const featureMachineText: FeatureText[] = [
     ]
   },
   {
+    id: "8",
     title: "TH1200",
     href: "/",
     description:
@@ -188,6 +196,7 @@ export const featureMachineText: FeatureText[] = [
     ]
   },
   {
+    id: "9",
     title: "TH2000",
     href: "/",
     description:
@@ -207,5 +216,49 @@ export const featureMachineText: FeatureText[] = [
       "Autonomia: 4-6 horas",
       "Peso Total: 1164 kg"
     ]
-  },
+  }
+  // {
+  //   id: "9",
+  //   title: "TH2000",
+  //   href: "/",
+  //   description:
+  //     "A solução profissional para limpeza de grandes áreas. Produtividade de8000 m²/h, tanques de 390L/400L para resultados impecáveis em grandes espaços.",
+  //   cta: "Solicite um orçamento",
+  //   message: "http://wa.me/+5511930111440?text=Ol%C3%A1%2C%20eu%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20da%20m%C3%A1quina%20TH2000",
+  //   learnMore: "Saiba Mais",
+  //   image: imageTH2000.src,
+  //   capacity: "Tanques de 390 | 400 litros",
+  //   productivity: "Produtividade de 8000 m²/h",
+  //   battery: "Autonomia de 6 à 8 horas",
+  //   specifications: [
+  //     "Tanques de Solução/Recuperação: 390/400 L",
+  //     "Largura de Limpeza: 1380 mm",
+  //     "Pressão da Escova de Disco (Mpa): 4.8", 
+  //     "Produtividade: 7500 m²/h",
+  //     "Autonomia: 4-6 horas",
+  //     "Peso Total: 1164 kg"
+  //   ]
+  // },
+  // {
+  //   id: "9",
+  //   title: "TH2000",
+  //   href: "/",
+  //   description:
+  //     "A solução profissional para limpeza de grandes áreas. Produtividade de8000 m²/h, tanques de 390L/400L para resultados impecáveis em grandes espaços.",
+  //   cta: "Solicite um orçamento",
+  //   message: "http://wa.me/+5511930111440?text=Ol%C3%A1%2C%20eu%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20da%20m%C3%A1quina%20TH2000",
+  //   learnMore: "Saiba Mais",
+  //   image: imageTH2000.src,
+  //   capacity: "Tanques de 390 | 400 litros",
+  //   productivity: "Produtividade de 8000 m²/h",
+  //   battery: "Autonomia de 6 à 8 horas",
+  //   specifications: [
+  //     "Tanques de Solução/Recuperação: 390/400 L",
+  //     "Largura de Limpeza: 1380 mm",
+  //     "Pressão da Escova de Disco (Mpa): 4.8", 
+  //     "Produtividade: 7500 m²/h",
+  //     "Autonomia: 4-6 horas",
+  //     "Peso Total: 1164 kg"
+  //   ]
+  // }
 ];

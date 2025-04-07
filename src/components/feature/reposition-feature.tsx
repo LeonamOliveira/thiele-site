@@ -6,6 +6,7 @@ import imageTH2000 from "../../../public/assets/TH2000 - 1.png";
 
 export const featureRepositionText: FeatureText[] = [
   {
+    id: "10",
     title: "RODO",
     href: "/",
     description:
@@ -17,6 +18,7 @@ export const featureRepositionText: FeatureText[] = [
     battery: "Autonomia de 3 à 4 horas",
   },
   {
+    id: "11",
     title: "MANGUEIRA",
     href: "/",
     description: "Mangueira Industrial de Alta Pressão para Lavadoras de Piso Thiele.",
@@ -27,6 +29,7 @@ export const featureRepositionText: FeatureText[] = [
     battery: "Autonomia de 6 à 8 horas",
   },
   {
+    id: "12",
     title: "BORRACHA",
     href: "/",
     description: "Borracha de Reposição de Alta Durabilidade para Lavadoras Thiele.",
