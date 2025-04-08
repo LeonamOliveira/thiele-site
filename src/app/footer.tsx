@@ -2,7 +2,7 @@ import { Mail, MapPin, Phone } from "lucide-react";
 export default function Footer() {
   return (
     <section className="py-2">
-      <div className="container">
+      <div className="container mx-auto px-4">
         <div className="mb-12">
           <span className="text-sm font-semibold">Indústrias Thiele</span>
           <h1 className="mt-1 mb-3 text-3xl font-semibold text-balance md:text-4xl">
