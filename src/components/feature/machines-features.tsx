@@ -9,6 +9,8 @@ import imageTH900 from "../../../public/assets/TH900 - 2.png";
 import imageTH1000 from "../../../public/assets/TH1000 - 1.png";
 import imageTH1200 from "../../../public/assets/TH1200 - 1.png";
 import imageTH2000 from "../../../public/assets/TH2000 - 1.png";
+import imageExtratora from "../../../public/assets/extratora.png";
+import imagePolidora from "../../../public/assets/polidora.png";
 
 export const featureMachineText: FeatureText[] = [
   {
@@ -216,49 +218,51 @@ export const featureMachineText: FeatureText[] = [
       "Autonomia: 4-6 horas",
       "Peso Total: 1164 kg"
     ]
+  },
+  {
+    id: "10",
+    title: "Extratora",
+    href: "/",
+    description:
+      "A Extratora de Cera oferece desempenho robusto e eficiência notável na remoção de cera, ideal para a manutenção eficaz de grandes áreas.",
+    cta: "Solicite um orçamento",
+    message: "http://wa.me/+5511930111440?text=Ol%C3%A1%2C%20eu%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20da%20m%C3%A1quina%20TH2000",
+    learnMore: "Saiba Mais",
+    image: imageExtratora.src,
+    capacity: "Motor: 15hp",
+    productivity: "Consumo de Álcool: 1,9L/h",
+    battery: "Elétrica, à bateria (12V)",
+    specifications: [
+      "Tanques de Solução/Recuperação: 390/400 L",
+      "Largura de Limpeza: 1380 mm",
+      "Pressão da Escova de Disco (Mpa): 4.8", 
+      "Produtividade: 7500 m²/h",
+      "Autonomia: 4-6 horas",
+      "Peso Total: 1164 kg"
+    ]
+  },
+  {
+    id: "11",
+    title: "Polidora",
+    href: "/",
+    description:
+      "A Polidora a Combustão oferece alta performance e produtividade superior no polimento de grandes áreas. Eficiência devido a rotação x peso.",
+    cta: "Solicite um orçamento",
+    message: "http://wa.me/+5511930111440?text=Ol%C3%A1%2C%20eu%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20da%20m%C3%A1quina%20TH2000",
+    learnMore: "Saiba Mais",
+    image: imagePolidora.src,
+    capacity: "Motor: 16hp",
+    productivity: "Consumo de Álcool: 1,9l/h",
+    battery: "Autonomia de 6 à 8 horas",
+    specifications: [
+      "Motor: 15 HP",
+      "Combustível: Etanol",
+      "Disco Tynex: 685 mm", 
+      "Velocidade do Motor: 3600 RPM / 350 RPM no disco",
+      "Partida: Elétrica, à bateria (12 V)",
+      "Chassi: Liga de alumínio fundida",
+      "Nível de Ruído: 92 dB",
+      "Consumo de Etanol: 1,9 L/hora"
+    ]
   }
-  // {
-  //   id: "9",
-  //   title: "TH2000",
-  //   href: "/",
-  //   description:
-  //     "A solução profissional para limpeza de grandes áreas. Produtividade de8000 m²/h, tanques de 390L/400L para resultados impecáveis em grandes espaços.",
-  //   cta: "Solicite um orçamento",
-  //   message: "http://wa.me/+5511930111440?text=Ol%C3%A1%2C%20eu%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20da%20m%C3%A1quina%20TH2000",
-  //   learnMore: "Saiba Mais",
-  //   image: imageTH2000.src,
-  //   capacity: "Tanques de 390 | 400 litros",
-  //   productivity: "Produtividade de 8000 m²/h",
-  //   battery: "Autonomia de 6 à 8 horas",
-  //   specifications: [
-  //     "Tanques de Solução/Recuperação: 390/400 L",
-  //     "Largura de Limpeza: 1380 mm",
-  //     "Pressão da Escova de Disco (Mpa): 4.8", 
-  //     "Produtividade: 7500 m²/h",
-  //     "Autonomia: 4-6 horas",
-  //     "Peso Total: 1164 kg"
-  //   ]
-  // },
-  // {
-  //   id: "9",
-  //   title: "TH2000",
-  //   href: "/",
-  //   description:
-  //     "A solução profissional para limpeza de grandes áreas. Produtividade de8000 m²/h, tanques de 390L/400L para resultados impecáveis em grandes espaços.",
-  //   cta: "Solicite um orçamento",
-  //   message: "http://wa.me/+5511930111440?text=Ol%C3%A1%2C%20eu%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20da%20m%C3%A1quina%20TH2000",
-  //   learnMore: "Saiba Mais",
-  //   image: imageTH2000.src,
-  //   capacity: "Tanques de 390 | 400 litros",
-  //   productivity: "Produtividade de 8000 m²/h",
-  //   battery: "Autonomia de 6 à 8 horas",
-  //   specifications: [
-  //     "Tanques de Solução/Recuperação: 390/400 L",
-  //     "Largura de Limpeza: 1380 mm",
-  //     "Pressão da Escova de Disco (Mpa): 4.8", 
-  //     "Produtividade: 7500 m²/h",
-  //     "Autonomia: 4-6 horas",
-  //     "Peso Total: 1164 kg"
-  //   ]
-  // }
 ];

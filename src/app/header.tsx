@@ -66,9 +66,10 @@ export default function Header() {
           >
             <Image
               src={ImageMaquinas}
-              width={736}
+              width={650}
               alt="Máquinas da empresa Thiele"
               priority
+              className="w-full h-auto"
             />
           </motion.div>
         </div>

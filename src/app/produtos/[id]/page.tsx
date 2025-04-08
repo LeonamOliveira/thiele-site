@@ -86,13 +86,6 @@ const DetalhesProduto = () => {
               </ul>
             </div>
           )}
-
-          {/* Adicionar mais detalhes aqui */}
-          <div className="bg-gray-50 p-4 rounded-lg mt-6 shadow-md">
-            <h3 className="text-xl font-semibold text-gray-800">Outros Detalhes</h3>
-            {/* Exemplo de outros detalhes, adicione o que for relevante */}
-            <p className="text-sm text-gray-600">Outros detalhes do produto podem ser exibidos aqui.</p>
-          </div>
         </div>
       </div>
     </div>
