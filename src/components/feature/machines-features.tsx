@@ -7,8 +7,8 @@ import imageTH700 from "../../../public/assets/TH700 - 1.png";
 import imageTH800 from "../../../public/assets/TH800 - 1.png";
 import imageTH900 from "../../../public/assets/TH900 - 2.png";
 import imageTH1000 from "../../../public/assets/TH1000 - 1.png";
-import imageTH1200 from "../../../public/assets/TH1200 - 1.png";
-import imageTH2000 from "../../../public/assets/TH2000 - 1.png";
+// import imageTH1200 from "../../../public/assets/TH1200 - 1.png";
+// import imageTH2000 from "../../../public/assets/TH2000 - 1.png";
 import imageExtratora from "../../../public/assets/extratora.png";
 import imagePolidora from "../../../public/assets/polidora.png";
 
@@ -174,51 +174,51 @@ export const featureMachineText: FeatureText[] = [
       "Peso Total: 435 kg"
     ]
   },
-  {
-    id: "8",
-    title: "TH1200",
-    href: "/",
-    description:
-      "Limpeza de alta escala com a TH 12000.  Produtividade de 6000 m²/h, tanques de 245L/266L para resultados impecáveis em grandes espaços, alta performance e eficiente.",
-    cta: "Solicite um orçamento",
-    message: "http://wa.me/+5511930111440?text=Ol%C3%A1%2C%20eu%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20da%20m%C3%A1quina%20TH1200",
-    learnMore: "Saiba Mais",
-    image: imageTH1200.src,
-    capacity: "Tanques de 245 | 266 litros",
-    productivity: "Produtividade de 6000 m²/h",
-    battery: "Autonomia de 6 à 8 horas",
-    specifications: [
-      "Tanques de Solução/Recuperação: 245/266 L", 
-      "Largura de Limpeza: 1380 mm",
-      "Velocidade da Escova de Disco (RPM): 180",
-      "Produtividade: 6000 m²/h",
-      "Autonomia: 6-8 horas",
-      "Bateria de Lítio: ",
-      "Peso Total: 583 kg",
-    ]
-  },
-  {
-    id: "9",
-    title: "TH2000",
-    href: "/",
-    description:
-      "A solução profissional para limpeza de grandes áreas. Produtividade de8000 m²/h, tanques de 390L/400L para resultados impecáveis em grandes espaços.",
-    cta: "Solicite um orçamento",
-    message: "http://wa.me/+5511930111440?text=Ol%C3%A1%2C%20eu%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20da%20m%C3%A1quina%20TH2000",
-    learnMore: "Saiba Mais",
-    image: imageTH2000.src,
-    capacity: "Tanques de 390 | 400 litros",
-    productivity: "Produtividade de 8000 m²/h",
-    battery: "Autonomia de 6 à 8 horas",
-    specifications: [
-      "Tanques de Solução/Recuperação: 390/400 L",
-      "Largura de Limpeza: 1380 mm",
-      "Pressão da Escova de Disco (Mpa): 4.8", 
-      "Produtividade: 7500 m²/h",
-      "Autonomia: 4-6 horas",
-      "Peso Total: 1164 kg"
-    ]
-  },
+  // {
+  //   id: "8",
+  //   title: "TH1200",
+  //   href: "/",
+  //   description:
+  //     "Limpeza de alta escala com a TH 12000.  Produtividade de 6000 m²/h, tanques de 245L/266L para resultados impecáveis em grandes espaços, alta performance e eficiente.",
+  //   cta: "Solicite um orçamento",
+  //   message: "http://wa.me/+5511930111440?text=Ol%C3%A1%2C%20eu%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20da%20m%C3%A1quina%20TH1200",
+  //   learnMore: "Saiba Mais",
+  //   image: imageTH1200.src,
+  //   capacity: "Tanques de 245 | 266 litros",
+  //   productivity: "Produtividade de 6000 m²/h",
+  //   battery: "Autonomia de 6 à 8 horas",
+  //   specifications: [
+  //     "Tanques de Solução/Recuperação: 245/266 L", 
+  //     "Largura de Limpeza: 1380 mm",
+  //     "Velocidade da Escova de Disco (RPM): 180",
+  //     "Produtividade: 6000 m²/h",
+  //     "Autonomia: 6-8 horas",
+  //     "Bateria de Lítio: ",
+  //     "Peso Total: 583 kg",
+  //   ]
+  // },
+  // {
+  //   id: "9",
+  //   title: "TH2000",
+  //   href: "/",
+  //   description:
+  //     "A solução profissional para limpeza de grandes áreas. Produtividade de8000 m²/h, tanques de 390L/400L para resultados impecáveis em grandes espaços.",
+  //   cta: "Solicite um orçamento",
+  //   message: "http://wa.me/+5511930111440?text=Ol%C3%A1%2C%20eu%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20da%20m%C3%A1quina%20TH2000",
+  //   learnMore: "Saiba Mais",
+  //   image: imageTH2000.src,
+  //   capacity: "Tanques de 390 | 400 litros",
+  //   productivity: "Produtividade de 8000 m²/h",
+  //   battery: "Autonomia de 6 à 8 horas",
+  //   specifications: [
+  //     "Tanques de Solução/Recuperação: 390/400 L",
+  //     "Largura de Limpeza: 1380 mm",
+  //     "Pressão da Escova de Disco (Mpa): 4.8", 
+  //     "Produtividade: 7500 m²/h",
+  //     "Autonomia: 4-6 horas",
+  //     "Peso Total: 1164 kg"
+  //   ]
+  // },
   {
     id: "10",
     title: "Extratora",
