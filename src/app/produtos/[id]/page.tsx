@@ -5,6 +5,8 @@ import { useParams } from 'next/navigation';
 import Image from 'next/image';
 import { FeatureText } from '@/components/feature/interfaces/feature-text.interface';
 import { featureMachineText } from "@/components/feature/machines-features";
+import Header from '@/app/header';
+import Footer from '@/app/footer';
 
 const DetalhesProduto = () => {
   const { id } = useParams();
@@ -55,37 +57,42 @@ const DetalhesProduto = () => {
   }
 
   return (
-    <div className="container mx-auto p-8 max-w-5xl">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-        <div className="relative w-full h-80">
-          {produtoDetalhe.image && (
-            <Image
-              src={produtoDetalhe.image}
-              alt={produtoDetalhe.title}
-              layout="fill"
-              objectFit="cover"
-              className="rounded-lg shadow-lg"
-            />
-          )}
-        </div>
+    <>
+    
+      <Header />
+      <div className="container mx-auto p-8 max-w-5xl">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="relative w-full h-80">
+            {produtoDetalhe.image && (
+              <Image
+                src={produtoDetalhe.image}
+                alt={produtoDetalhe.title}
+                layout="fill"
+                objectFit="cover"
+                className="rounded-lg shadow-lg"
+              />
+            )}
+          </div>
 
-        <div>
-          <h1 className="text-3xl font-bold text-gray-900 mb-4">{produtoDetalhe.title}</h1>
-          <p className="text-lg text-gray-700 mb-4">{produtoDetalhe.description}</p>
+          <div>
+            <h1 className="text-3xl font-bold text-gray-900 mb-4">{produtoDetalhe.title}</h1>
+            <p className="text-lg text-gray-700 mb-4">{produtoDetalhe.description}</p>
 
-          {produtoDetalhe.specifications && produtoDetalhe.specifications.length > 0 && (
-            <div className="mb-6">
-              <h2 className="text-2xl font-semibold text-gray-800 mb-3">Especificações Técnicas</h2>
-              <ul className="list-disc pl-6 text-gray-700 space-y-2">
-                {produtoDetalhe.specifications.map((spec, index) => (
-                  <li key={index}>{spec}</li>
-                ))}
-              </ul>
-            </div>
-          )}
+            {produtoDetalhe.specifications && produtoDetalhe.specifications.length > 0 && (
+              <div className="mb-6">
+                <h2 className="text-2xl font-semibold text-gray-800 mb-3">Especificações Técnicas</h2>
+                <ul className="list-disc pl-6 text-gray-700 space-y-2">
+                  {produtoDetalhe.specifications.map((spec, index) => (
+                    <li key={index}>{spec}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
+          </div>
         </div>
       </div>
-    </div>
+      <Footer />
+    </>
   );
 };
 
