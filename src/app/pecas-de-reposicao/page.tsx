@@ -1,4 +1,3 @@
-// import Header from  "../footer";
 import { featureRepositionText } from "@/components/feature/reposition-feature";
 import Header from "../header";
 import Footer from "../footer";

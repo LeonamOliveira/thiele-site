@@ -31,7 +31,7 @@ export default function Header() {
               >
                 <Image
                   src={ImageLogo}
-                  width={250}
+                  width={500}
                   height={150}
                   alt="Logo da empresa Thiele"
                   priority
