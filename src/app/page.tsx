@@ -7,7 +7,20 @@ import imageReposicao from "../../public/assets/reposicao.jpeg";
 import Image from "next/image";
 import CarouselSwiper from "@/components/carousel-swiper";
 import { Feedback } from "@/components/feedback";
+
+import imageTH100 from "../../public/assets/TH100 - 1.png";
+import imageTH300 from "../../public/assets/TH300.png";
+import imageTH310 from "../../public/assets/TH310.png";
+import imageTH700 from "../../public/assets/TH700 - 1.png";
+import imageTH800 from "../../public/assets/TH800 - 1.png";
+import imageTH900 from "../../public/assets/TH900 - 2.png";
+import imageTH1000 from "../../public/assets/TH1000 - 1.png";
+
 export default function Home() {
+  const images = [
+    imageTH100, imageTH300, imageTH310, imageTH700, 
+    imageTH800, imageTH900, imageTH1000
+  ];
   return (
     <>
       <Header />
@@ -17,7 +30,7 @@ export default function Home() {
           Tecnologia moderna para limpeza eficiente e sustentável. 
           Mais autonomia, praticidade e potência no seu trabalho.`}
         features={featureMachineText}
-        media={<CarouselSwiper />}
+        media={<CarouselSwiper images={images}/>}
         textButton="Solicite um orçamento"
         link="http://wa.me/+5511930111440?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es"
         barraDePesquisa={true}

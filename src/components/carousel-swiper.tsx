@@ -6,21 +6,14 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import { Navigation, Pagination, Scrollbar, Autoplay, A11y } from 'swiper/modules';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 
-import imageTH100 from "../../public/assets/TH100 - 1.png";
-import imageTH300 from "../../public/assets/TH300.png";
-import imageTH310 from "../../public/assets/TH310.png";
-import imageTH700 from "../../public/assets/TH700 - 1.png";
-import imageTH800 from "../../public/assets/TH800 - 1.png";
-import imageTH900 from "../../public/assets/TH900 - 2.png";
-import imageTH1000 from "../../public/assets/TH1000 - 1.png";
-const images = [
-  imageTH100, imageTH300, imageTH310, imageTH700, 
-  imageTH800, imageTH900, imageTH1000
-];
+interface CarouselProps {
+  images: StaticImageData[];
+  className?: string;
+}
 
-export default function CarouselSwiper() {
+export default function CarouselSwiper({ images, className }: CarouselProps) {
   return (
     <Swiper
       modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
@@ -29,7 +22,7 @@ export default function CarouselSwiper() {
       navigation
       pagination={{ clickable: true }}
       scrollbar={{ draggable: true }}
-      className="w-full max-w-xs"
+      className={`w-full max-w-xs ${className || ""}`}
       autoplay={{ delay: 1500, disableOnInteraction: false }}
     >
       {images.map((image, index) => (
