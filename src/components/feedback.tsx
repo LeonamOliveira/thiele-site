@@ -49,7 +49,7 @@ export function Feedback() {
         <Section className="w-full">
             <Container>
                 <div className="flex flex-col gap-3 py-2">
-                    <h1 className="font-light text-[3.5rem] leading-[3.875rem] text-[#6C6C6C]">
+                    <h1 className="font-light text-[3.5rem] leading-[3.875rem] text-[#6C6C6C] text-center">
                         O que dizem nossos clientes
                     </h1>
                 </div>

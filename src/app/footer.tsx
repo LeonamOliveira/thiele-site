@@ -1,12 +1,13 @@
 import { Mail, MapPin, Phone } from "lucide-react";
 export default function Footer() {
   return (
-    <section className="py-2">
+    <section className="py-2" style={{color: '#2B418D', backgroundColor: '#D9D9D9'}}>
       <div className="container mx-auto px-4">
         <div className="mb-12">
-          <span className="text-sm font-semibold">Indústrias Thiele</span>
+          {/* <span className="text-sm font-semibold"> Indústrias Thiele</span> */}
           <h1 className="mt-1 mb-3 text-3xl font-semibold text-balance md:text-4xl">
-            Central de Atendimento
+          <br />
+          Central de Atendimento
           </h1>
         </div>
         <div className="grid gap-10 md:grid-cols-3">
@@ -25,11 +26,9 @@ export default function Footer() {
             </span>
             <p className="mb-2 text-lg font-semibold">Nossa Localização</p>
             <a href="#" className="font-semibold hover:underline">
-              Estr. Estadual Boituva - Tatuí, <br />
-              (SP-129), <br />
-              6118-AP, <br />
-              Boituva-SP, <br />
-              18550-000
+              Rod. SP129 s/n, km 18.5 <br />
+              Bairro Retiro, Boituva SP <br />
+              CEP 18559-899
             </a>
           </div>
           <div>
@@ -38,7 +37,11 @@ export default function Footer() {
             </span>
             <p className="mb-2 text-lg font-semibold"> Nosso Contato</p>
             <a href="#" className="font-semibold hover:underline">
-              (11) 93011-1440
+              Suporte (11) 93011-1440 <br />
+              Administração (11) 2897-7002 <br />
+              Ramal 201 - Manutenção < br/>
+              Ramal 202 - Comercial <br />
+              Ramal 203 - Financeiro
             </a>
           </div>
         </div>

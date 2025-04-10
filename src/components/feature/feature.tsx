@@ -48,7 +48,7 @@ const Feature: React.FC<FeatureProps> = ({
   return (
     <Section className="w-full">
       <Container className="grid items-stretch md:grid-cols-2 md:gap-12">
-        <div className="flex flex-col gap-3 py-2">
+        <div className="flex flex-col gap-3 py-0">
           <h1
             className="!my-0"
             style={{ fontWeight: 300, fontSize: "56px", lineHeight: "62px", color: "#6C6C6C" }}

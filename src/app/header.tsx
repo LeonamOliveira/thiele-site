@@ -7,77 +7,73 @@ import ImageMaquinas from "../../public/assets/Máqiuinas.png";
 import { motion } from "framer-motion";
 import { Separator } from "@/components/ui/separator";
 
-
 export default function Header() {
   return (
-    <motion.header 
+    <motion.header
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
       className="w-full bg-background border-b border-border"
     >
-      <div className="bg-[#2B418D] text-white py-2">
+      <div className="bg-[#D9D9D9] py-2" style={{ color: "#2B418D" }}>
         <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-4 text-sm">
-          <motion.p 
+          <motion.div
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="text-center md:text-left hover:scale-105 transition-transform duration-300"
+            className="hover:scale-105 transition-transform duration-300"
           >
-            <strong>Central de atendimento: (11) 93011-1440</strong>
-          </motion.p>
-          <motion.p 
+            <Link href="/">
+              <motion.div
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.5 }}
+              >
+                <Image
+                  src={ImageLogo}
+                  width={250}
+                  height={150}
+                  alt="Logo da empresa Thiele"
+                  priority
+                />
+              </motion.div>
+            </Link>
+          </motion.div>
+
+          <motion.div
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
             className="text-center md:text-right hover:scale-105 transition-transform duration-300"
           >
+            <strong>Central de atendimento: (11) 93011-1440</strong>
+            <br />
             <strong>comercial@thiele.com.br</strong>
-          </motion.p>
-        </div>
-      </div>
-
-      <div className="w-full py-6">
-        <div className="container mx-auto px-4 flex justify-center md:justify-start">
-          <motion.div 
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5 }}
-          >
-            <Link href="/" passHref>
-              <Image
-                src={ImageLogo}
-                width={250}
-                height={150}
-                alt="Logo da empresa Thiele"
-                priority
-              />
-            </Link>
           </motion.div>
         </div>
       </div>
 
       <div className="w-full py-6">
-        <div className="container mx-auto px-4 flex justify-center">
-          <motion.div 
+        <div className=" relative w-full h-[400px] md:h-[500px] lg:h-[600px]">
+          <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: 0.3 }}
           >
             <Image
               src={ImageMaquinas}
-              width={650}
               alt="Máquinas da empresa Thiele"
+              fill
               priority
-              className="w-full h-auto"
+              className="w-full h-full"
             />
           </motion.div>
         </div>
       </div>
 
-      <div className="w-full bg-[#2B418D] py-6">
+      <div className="w-full bg-[#D9D9D9] py-6">
         <div className="container mx-auto px-4">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
@@ -98,7 +94,8 @@ export default function Header() {
                 <motion.p
                   whileHover={{ scale: 1.05, filter: "brightness(1.2)" }}
                   transition={{ duration: 0.3 }}
-                  className="text-white text-lg md:text-xl font-medium text-center md:text-left leading-snug cursor-pointer"
+                  className="text-lg md:text-xl font-medium text-center md:text-left leading-snug cursor-pointer"
+                  style={{ color: "#2B418D" }}
                 >
                   <strong>{text}</strong>
                 </motion.p>
@@ -111,67 +108,8 @@ export default function Header() {
           </motion.div>
         </div>
       </div>
-      
+
       <Separator />
     </motion.header>
   );
 }
-
-
-// export default function Header() {
-//   return (
-//     <header className="w-full bg-background border-b border-border">
-//       <div className="bg-[#2B418D] text-white py-2">
-//         <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-4 text-sm">
-//           <p className="text-center md:text-left">
-//             <strong>Central de atendimento: (11) 93011-1440</strong>
-//           </p>
-//           <p className="text-center md:text-right">
-//             <strong>comercial@thiele.com.br</strong>
-//           </p>
-//         </div>
-//       </div>
-
-//       <div className="w-full py-6">
-//         <div className="container mx-auto px-4 flex flex-col items-center md:items-start gap-6 md:gap-12">
-//           <div className="flex justify-center md:justify-start w-full md:w-auto">
-//             <Image
-//               src={ImageLogo}
-//               width={250}
-//               height={150}
-//               alt="Logo da empresa Thiele"
-//               priority
-//             />
-//           </div>
-//         </div>
-//       </div>
-//       <div className="w-full py-6">
-//         <div className="container mx-auto px-4 flex flex-col items-center md:items-center gap-6 md:gap-12">
-//           <div className="flex justify-center md:justify-center w-full md:w-auto">
-//             <Image
-//               src={ImageMaquinas}
-//               width={736}
-//               alt="Logo da empresa Thiele"
-//               priority
-//             />
-//           </div>
-//         </div>
-//       </div>
-//       <div className="w-full bg-[#2B418D]  py-6">
-//         <div className="container mx-auto px-4 flex flex-col items-center md:items-start gap-6 md:gap-12">
-//           <div className="flex flex-col md:flex-row items-center justify-between w-full gap-6 md:gap-12">
-//             <p className="text-white text-lg md:text-xl font-medium text-center md:text-left leading-snug">
-//               <strong>Entrega em todo o território nacional</strong>
-//             </p>
-//             <p className="text-white text-lg md:text-xl font-medium text-center md:text-left leading-snug">
-//               <strong>Central de Atendimento 24 horas</strong>
-//             </p>
-//             <p className="text-white text-lg md:text-xl font-medium text-center md:text-left leading-snug">
-//               <strong>Suporte especializado no território nacional</strong>
-//             </p>
-//           </div>
-//         </div>
-//       </div>
-//     </header>
-//   );
-// }
