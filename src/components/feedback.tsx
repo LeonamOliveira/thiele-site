@@ -58,7 +58,7 @@ export function Feedback() {
                     {testimonials.map((testimonial) => (
                     <CarouselItem key={testimonial.id}>
                         <div className="container flex flex-col items-center text-center">
-                        <p className="mb-8 max-w-4xl font-medium md:px-8 lg:text-xl">
+                        <p className="mb-8 max-w-4xl font-medium md:px-8 lg:text-xl" style={{color: '#6C6C6C'}}>
                             &ldquo;{testimonial.text}&rdquo;
                         </p>
                         <p className="mb-1 text-sm font-medium md:text-lg">
