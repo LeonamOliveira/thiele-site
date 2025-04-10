@@ -61,7 +61,7 @@ export function Feedback() {
                         <p className="mb-8 max-w-4xl font-medium md:px-8 lg:text-xl" style={{color: '#6C6C6C'}}>
                             &ldquo;{testimonial.text}&rdquo;
                         </p>
-                        <p className="mb-1 text-sm font-medium md:text-lg">
+                        <p className="mb-1 text-sm font-medium md:text-lg text-[#6C6C6C]">
                             {testimonial.name}
                         </p>
                         <div className="mt-2 flex items-center gap-0.5">
