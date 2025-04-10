@@ -15,12 +15,9 @@ import imageTH700 from "../../public/assets/TH700 - 1.png";
 import imageTH800 from "../../public/assets/TH800 - 1.png";
 import imageTH900 from "../../public/assets/TH900 - 2.png";
 import imageTH1000 from "../../public/assets/TH1000 - 1.png";
-import imageTH1200 from "../../public/assets/TH1200 - 1.png";
-import imageTH2000 from "../../public/assets/TH2000 - 1.png";
-
 const images = [
   imageTH100, imageTH300, imageTH310, imageTH700, 
-  imageTH800, imageTH900, imageTH1000, imageTH1200, imageTH2000
+  imageTH800, imageTH900, imageTH1000
 ];
 
 export default function CarouselSwiper() {
