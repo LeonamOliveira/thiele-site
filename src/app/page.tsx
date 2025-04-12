@@ -8,7 +8,7 @@ import Image from "next/image";
 import CarouselSwiper from "@/components/carousel-swiper";
 import { Feedback } from "@/components/feedback";
 
-import imageTH100 from "../../public/assets/TH100 - 1.png";
+import imageTH100 from "../../public/assets/TH100/TH100 - 1.png";
 import imageTH300 from "../../public/assets/TH300.png";
 import imageTH310 from "../../public/assets/TH310.png";
 import imageTH700 from "../../public/assets/TH700 - 1.png";
@@ -47,7 +47,7 @@ export default function Home() {
         link="kit-transformador"
         barraDePesquisa={false}
       />
-      <Feature
+      {/* <Feature
         title="Peças de Reposição"
         description={`
           Fabricadas com os mais altos padrões, nossas peças garantem a durabilidade e o funcionamento perfeito da sua máquina, evitando paradas e prolongando sua vida útil.  
@@ -58,7 +58,7 @@ export default function Home() {
         textButton="Confira as peças disponíveis"
         link="pecas-de-reposicao"
         barraDePesquisa={false}
-      />
+      /> */}
       <Feedback />
       <Footer />
     </>

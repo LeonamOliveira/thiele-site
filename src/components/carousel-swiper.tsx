@@ -31,7 +31,7 @@ export default function CarouselSwiper({ images, className }: CarouselProps) {
             <Image
               src={image}
               alt={`Image ${index + 1}`}
-              width={800}
+              width={750}
               height={500}
               className="object-contain w-full h-full"
             />

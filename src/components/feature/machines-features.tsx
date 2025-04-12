@@ -1,14 +1,17 @@
 import { FeatureText } from "./interfaces/feature-text.interface";
 
-import imageTH100 from "../../../public/assets/TH100 - 1.png";
+import image1TH100 from "../../../public/assets/TH100/TH100 - 1.png";
+import image2TH100 from '../../../public/assets/TH100/TH100 - 2.png';
+import image3TH100 from '../../../public/assets/TH100/TH100 - 3.png';
+import image5TH100 from '../../../public/assets/TH100/TH100 - 5.png';
+import image6TH100 from '../../../public/assets/TH100/TH100 - 6.png';
+import image7TH100 from '../../../public/assets/TH100/TH100 - 7.png';
 import imageTH300 from "../../../public/assets/TH300.png";
 import imageTH310 from "../../../public/assets/TH310.png";
 import imageTH700 from "../../../public/assets/TH700 - 1.png";
 import imageTH800 from "../../../public/assets/TH800 - 1.png";
 import imageTH900 from "../../../public/assets/TH900 - 2.png";
 import imageTH1000 from "../../../public/assets/TH1000 - 1.png";
-// import imageTH1200 from "../../../public/assets/TH1200 - 1.png";
-// import imageTH2000 from "../../../public/assets/TH2000 - 1.png";
 import imageExtratora from "../../../public/assets/extratora.png";
 import imagePolidora from "../../../public/assets/polidora.png";
 
@@ -21,8 +24,7 @@ export const featureMachineText: FeatureText[] = [
       "A limpadora TH 100 está disponível em duas configurações, que se adaptam perfeitamente às necessidades do seu negócio.",
     cta: "Solicite um orçamento",
     message: "http://wa.me/+5511930111440?text=Ol%C3%A1%2C%20eu%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20da%20m%C3%A1quina%20TH100",
-    learnMore: "Saiba Mais",
-    image: imageTH100.src,
+    image: image1TH100.src,
     capacity: "Tanques de 3.5/4.5L",
     productivity: "Produtividade de 1000 m²/h",
     battery: "Autonomia de 1.5 horas",
@@ -34,6 +36,14 @@ export const featureMachineText: FeatureText[] = [
       "Autonomia: 1.5 horas",
       "Bateria de Lítio: 36V 12Ah",
       "Peso Total: 18.5 kg"
+    ],
+    carousel: [
+      image1TH100,
+      image2TH100,
+      image3TH100,
+      image5TH100,
+      image6TH100,
+      image7TH100,
     ]
   },
   {
@@ -44,7 +54,6 @@ export const featureMachineText: FeatureText[] = [
       "Limpeza profissional para grandes áreas. Alta produtividade (2500 m²/h) e autonomia de 4-5 horas. Ideal para empresas que buscam eficiência.",
     cta: "Solicite um orçamento",
     message: "http://wa.me/+5511930111440?text=Ol%C3%A1%2C%20eu%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20da%20m%C3%A1quina%20TH300",
-    learnMore: "Saiba Mais",
     image: imageTH300.src,
     capacity: "Tanque de 60L",
     productivity: "Produtividade de 2000m²/h",
@@ -67,7 +76,6 @@ export const featureMachineText: FeatureText[] = [
       "Limpeza eficiente e sem esforço! Lavadora tracionada com alta produtividade (2500 m²/h) e autonomia de 4-5 horas. Ideal para grandes áreas.",
     cta: "Solicite um orçamento",
     message: "http://wa.me/+5511930111440?text=Ol%C3%A1%2C%20eu%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20da%20m%C3%A1quina%20TH310",
-    learnMore: "Saiba Mais",
     image: imageTH310.src,
     capacity: "Tanque de 55L",
     productivity: "Produtividade de 3000m²/h",
@@ -90,7 +98,6 @@ export const featureMachineText: FeatureText[] = [
       "A solução profissional para limpeza de grandes áreas. Alta produtividade (3000 m²/h) e tanques de 95L/107L para máxima eficiência e autonomia.",
     cta: "Solicite um orçamento",
     message: "http://wa.me/+5511930111440?text=Ol%C3%A1%2C%20eu%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20da%20m%C3%A1quina%20TH700",
-    learnMore: "Saiba Mais",
     image: imageTH700.src,
     capacity: "Tanque de 100 | 110 litros",
     productivity: "Produtividade de 3000 m²/h",
@@ -113,7 +120,6 @@ export const featureMachineText: FeatureText[] = [
       "Limpeza profissional de alta performance.  Produtividade de 3300 m²/h, tanques de 85L/90L e tração potente para grandes áreas.",
     cta: "Solicite um orçamento",
     message: "http://wa.me/+5511930111440?text=Ol%C3%A1%2C%20eu%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20da%20m%C3%A1quina%20TH800",
-    learnMore: "Saiba Mais",
     image: imageTH800.src,
     capacity: "Tanques de 90 | 100 litros",
     productivity: "Produtividade de 3000 m²/h",
@@ -136,7 +142,6 @@ export const featureMachineText: FeatureText[] = [
       "A força da limpeza profissional. Produtividade de 4500 m²/h, tanques de 115L/125L e tração potente para grandes áreas e alta pressão (4.15Mpa).",
     cta: "Solicite um orçamento",
     message: "http://wa.me/+5511930111440?text=Ol%C3%A1%2C%20eu%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20da%20m%C3%A1quina%20TH900",
-    learnMore: "Saiba Mais",
     image: imageTH900.src,
     capacity: "Tanques de 120|130 litros",
     productivity: "Produtividade de 3500 m²/h",
@@ -159,7 +164,6 @@ export const featureMachineText: FeatureText[] = [
       "Máxima performance em limpeza profissional. Produtividade de 4500 m²/h, tanques de 150L/165L e tração potente para grandes áreas e alta pressão.",
     cta: "Solicite um orçamento",
     message: "http://wa.me/+5511930111440?text=Ol%C3%A1%2C%20eu%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20da%20m%C3%A1quina%20TH1000",
-    learnMore: "Saiba Mais",
     image: imageTH1000.src,
     capacity: "Tanques de 155 | 170 litros",
     productivity: "Produtividade de 4500 m²/h",
@@ -182,7 +186,6 @@ export const featureMachineText: FeatureText[] = [
   //     "Limpeza de alta escala com a TH 12000.  Produtividade de 6000 m²/h, tanques de 245L/266L para resultados impecáveis em grandes espaços, alta performance e eficiente.",
   //   cta: "Solicite um orçamento",
   //   message: "http://wa.me/+5511930111440?text=Ol%C3%A1%2C%20eu%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20da%20m%C3%A1quina%20TH1200",
-  //   learnMore: "Saiba Mais",
   //   image: imageTH1200.src,
   //   capacity: "Tanques de 245 | 266 litros",
   //   productivity: "Produtividade de 6000 m²/h",
@@ -205,7 +208,6 @@ export const featureMachineText: FeatureText[] = [
   //     "A solução profissional para limpeza de grandes áreas. Produtividade de8000 m²/h, tanques de 390L/400L para resultados impecáveis em grandes espaços.",
   //   cta: "Solicite um orçamento",
   //   message: "http://wa.me/+5511930111440?text=Ol%C3%A1%2C%20eu%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20da%20m%C3%A1quina%20TH2000",
-  //   learnMore: "Saiba Mais",
   //   image: imageTH2000.src,
   //   capacity: "Tanques de 390 | 400 litros",
   //   productivity: "Produtividade de 8000 m²/h",
@@ -227,7 +229,6 @@ export const featureMachineText: FeatureText[] = [
       "A Extratora de Cera oferece desempenho robusto e eficiência notável na remoção de cera, ideal para a manutenção eficaz de grandes áreas.",
     cta: "Solicite um orçamento",
     message: "http://wa.me/+5511930111440?text=Ol%C3%A1%2C%20eu%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20da%20m%C3%A1quina%20TH2000",
-    learnMore: "Saiba Mais",
     image: imageExtratora.src,
     capacity: "Motor: 15hp",
     productivity: "Consumo de Álcool: 1,9L/h",
@@ -249,7 +250,6 @@ export const featureMachineText: FeatureText[] = [
       "A Polidora a Combustão oferece alta performance e produtividade superior no polimento de grandes áreas. Eficiência devido a rotação x peso.",
     cta: "Solicite um orçamento",
     message: "http://wa.me/+5511930111440?text=Ol%C3%A1%2C%20eu%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20da%20m%C3%A1quina%20TH2000",
-    learnMore: "Saiba Mais",
     image: imagePolidora.src,
     capacity: "Motor: 16hp",
     productivity: "Consumo de Álcool: 1,9l/h",

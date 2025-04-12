@@ -2,7 +2,6 @@
 
 import React, { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
-import Image from "next/image";
 import { FeatureText } from "@/components/feature/interfaces/feature-text.interface";
 import { featureMachineText } from "@/components/feature/machines-features";
 import Header from "@/app/header";
@@ -11,6 +10,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { MessageCircle } from "lucide-react";
 import { toast } from "sonner";
+import CarouselSwiper from "@/components/carousel-swiper";
 
 const DetalhesProduto = () => {
   const { id } = useParams();
@@ -71,14 +71,15 @@ const DetalhesProduto = () => {
       <div className="container mx-auto p-8 max-w-5xl">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           <div className="relative w-full h-80">
-            {produtoDetalhe.image && (
-              <Image
-                src={produtoDetalhe.image}
-                alt={produtoDetalhe.title}
-                layout="fill"
-                objectFit="cover"
-                className="rounded-lg shadow-lg"
-              />
+            {produtoDetalhe.carousel && (
+              <CarouselSwiper images={produtoDetalhe.carousel}/>
+              // <Image
+              //   src={produtoDetalhe.image}
+              //   alt={produtoDetalhe.title}
+              //   layout="fill"
+              //   objectFit="cover"
+              //   className="rounded-lg shadow-lg"
+              // />
             )}
           </div>
 
