@@ -3,7 +3,7 @@ import Footer from "./footer";
 import Feature from "../components/feature/feature";
 import { featureMachineText } from "@/components/feature/machines-features";
 import imageChumbo from "../../public/assets/chumbo.png";
-import imageReposicao from "../../public/assets/reposicao.jpeg";
+// import imageReposicao from "../../public/assets/reposicao.jpeg";
 import Image from "next/image";
 import CarouselSwiper from "@/components/carousel-swiper";
 import { Feedback } from "@/components/feedback";
