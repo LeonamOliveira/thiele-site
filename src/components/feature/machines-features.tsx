@@ -8,20 +8,14 @@ import image6TH100 from '../../../public/assets/TH100/TH100 - 6.png';
 import image7TH100 from '../../../public/assets/TH100/TH100 - 7.png';
 
 import image1TH300 from '../../../public/assets/TH300/TH300 - 1.png';
-import image2TH300 from '../../../public/assets/TH300/TH300 - 2.png';
 import image3TH300 from '../../../public/assets/TH300/TH300 - 3.png';
 import image4TH300 from '../../../public/assets/TH300/TH300 - 4.png';
 import image5TH300 from '../../../public/assets/TH300/TH300 - 5.png';
-import image6TH300 from '../../../public/assets/TH300/TH300 - 6.png';
 import image7TH300 from '../../../public/assets/TH300/TH300 - 7.png';
 import image8TH300 from '../../../public/assets/TH300/TH300 - 8.png';
-import image9TH300 from '../../../public/assets/TH300/TH300 - 9.png';
 import image10TH300 from '../../../public/assets/TH300/TH300 - 10.png';
 
 import image1TH700 from '../../../public/assets/TH700/TH700 - 1.png';
-import image2TH700 from '../../../public/assets/TH700/TH700 - 2.png';
-import image3TH700 from '../../../public/assets/TH700/TH700 - 3.png';
-import image4TH700 from '../../../public/assets/TH700/TH700 - 4.png';
 import image5TH700 from '../../../public/assets/TH700/TH700 - 5.png';
 import image6TH700 from '../../../public/assets/TH700/TH700 - 6.png';
 import image7TH700 from '../../../public/assets/TH700/TH700 - 7.png';
@@ -82,15 +76,11 @@ export const featureMachineText: FeatureText[] = [
     productivity: "Produtividade de 2000m²/h",
     battery: "Autonima de 4 à 5 horas",
     carousel: [
-      image1TH300,
-      image2TH300,
       image3TH300,
       image4TH300,
       image5TH300,
-      image6TH300,
       image7TH300,
       image8TH300,
-      image9TH300,
       image10TH300,
     ],
     specifications: [
@@ -139,9 +129,6 @@ export const featureMachineText: FeatureText[] = [
     battery: "Autonomia de 3 à 4 horas",
     carousel: [
       image1TH700,
-      image2TH700,
-      image3TH700,
-      image4TH700,
       image5TH700,
       image6TH700,
       image7TH700,
