@@ -6,9 +6,32 @@ import image3TH100 from '../../../public/assets/TH100/TH100 - 3.png';
 import image5TH100 from '../../../public/assets/TH100/TH100 - 5.png';
 import image6TH100 from '../../../public/assets/TH100/TH100 - 6.png';
 import image7TH100 from '../../../public/assets/TH100/TH100 - 7.png';
-import imageTH300 from "../../../public/assets/TH300.png";
+
+import image1TH300 from '../../../public/assets/TH300/TH300 - 1.png';
+import image2TH300 from '../../../public/assets/TH300/TH300 - 2.png';
+import image3TH300 from '../../../public/assets/TH300/TH300 - 3.png';
+import image4TH300 from '../../../public/assets/TH300/TH300 - 4.png';
+import image5TH300 from '../../../public/assets/TH300/TH300 - 5.png';
+import image6TH300 from '../../../public/assets/TH300/TH300 - 6.png';
+import image7TH300 from '../../../public/assets/TH300/TH300 - 7.png';
+import image8TH300 from '../../../public/assets/TH300/TH300 - 8.png';
+import image9TH300 from '../../../public/assets/TH300/TH300 - 9.png';
+import image10TH300 from '../../../public/assets/TH300/TH300 - 10.png';
+
+import image1TH700 from '../../../public/assets/TH700/TH700 - 1.png';
+import image2TH700 from '../../../public/assets/TH700/TH700 - 2.png';
+import image3TH700 from '../../../public/assets/TH700/TH700 - 3.png';
+import image4TH700 from '../../../public/assets/TH700/TH700 - 4.png';
+import image5TH700 from '../../../public/assets/TH700/TH700 - 5.png';
+import image6TH700 from '../../../public/assets/TH700/TH700 - 6.png';
+import image7TH700 from '../../../public/assets/TH700/TH700 - 7.png';
+import image8TH700 from '../../../public/assets/TH700/TH700 - 8.png';
+import image9TH700 from '../../../public/assets/TH700/TH700 - 9.png';
+import image10TH700 from '../../../public/assets/TH700/TH700 - 10.png';
+import image11TH700 from '../../../public/assets/TH700/TH700 - 11.png';
+
+
 import imageTH310 from "../../../public/assets/TH310.png";
-import imageTH700 from "../../../public/assets/TH700 - 1.png";
 import imageTH800 from "../../../public/assets/TH800 - 1.png";
 import imageTH900 from "../../../public/assets/TH900 - 2.png";
 import imageTH1000 from "../../../public/assets/TH1000 - 1.png";
@@ -54,10 +77,22 @@ export const featureMachineText: FeatureText[] = [
       "Limpeza profissional para grandes áreas. Alta produtividade (2500 m²/h) e autonomia de 4-5 horas. Ideal para empresas que buscam eficiência.",
     cta: "Solicite um orçamento",
     message: "http://wa.me/+5511930111440?text=Ol%C3%A1%2C%20eu%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20da%20m%C3%A1quina%20TH300",
-    image: imageTH300.src,
+    image: image1TH300.src,
     capacity: "Tanque de 60L",
     productivity: "Produtividade de 2000m²/h",
     battery: "Autonima de 4 à 5 horas",
+    carousel: [
+      image1TH300,
+      image2TH300,
+      image3TH300,
+      image4TH300,
+      image5TH300,
+      image6TH300,
+      image7TH300,
+      image8TH300,
+      image9TH300,
+      image10TH300,
+    ],
     specifications: [
       "Tanques de Solução/Recuperação: 95/107L", 
       "Largura de Limpeza: 1000 mm",
@@ -98,10 +133,23 @@ export const featureMachineText: FeatureText[] = [
       "A solução profissional para limpeza de grandes áreas. Alta produtividade (3000 m²/h) e tanques de 95L/107L para máxima eficiência e autonomia.",
     cta: "Solicite um orçamento",
     message: "http://wa.me/+5511930111440?text=Ol%C3%A1%2C%20eu%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20da%20m%C3%A1quina%20TH700",
-    image: imageTH700.src,
+    image: image1TH700.src,
     capacity: "Tanque de 100 | 110 litros",
     productivity: "Produtividade de 3000 m²/h",
     battery: "Autonomia de 3 à 4 horas",
+    carousel: [
+      image1TH700,
+      image2TH700,
+      image3TH700,
+      image4TH700,
+      image5TH700,
+      image6TH700,
+      image7TH700,
+      image8TH700,
+      image9TH700,
+      image10TH700,
+      image11TH700
+    ],
     specifications: [
       "Tanques de Solução/Recuperação: 95/107L",
       "Largura de Limpeza: 1000mm",
