@@ -15,7 +15,7 @@ export default function Header() {
       transition={{ duration: 0.5 }}
       className="w-full bg-background border-b border-border"
     >
-      <div className="bg-[#D9D9D9] py-2" style={{ color: "#2B418D" }}>
+      <div className="bg-[#D9D9D9] py-2" style={{ color: "#2B418D", position: 'fixed', top: 0, left: 0, width: '100%', zIndex: 50 }} >
         <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-4 text-sm">
           <motion.div
             initial={{ opacity: 0, y: -10 }}
