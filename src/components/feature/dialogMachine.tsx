@@ -3,7 +3,7 @@ import { FeatureText } from "./interfaces/feature-text.interface";
 import Link from "next/link";
 
 interface FeatureDialogProps {
-  feature: FeatureText;  // Certificando-se de que feature tem o tipo correto
+  feature: FeatureText; 
 }
 
 const FeatureDialog: React.FC<FeatureDialogProps> = ({ feature }) => {

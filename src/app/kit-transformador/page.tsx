@@ -6,8 +6,13 @@ import { Separator } from "@/components/ui/separator";
 import { motion } from "framer-motion";
 import Footer from "../footer";
 import Header from "../header";
+import CarouselSwiper from "@/components/carousel-swiper";
+import bateria1 from '../../../public/assets/bateria/bateria1.jpg';
+import bateria2 from '../../../public/assets/bateria/bateria2.jpg';
+import bateria3 from '../../../public/assets/bateria/bateria3.jpg';
 
 export default function Home() {
+  const images = [bateria1, bateria2, bateria3];
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
@@ -89,6 +94,8 @@ export default function Home() {
           </div>
         </div>
       </motion.section>
+
+      <CarouselSwiper images={images} />
 
       <Separator className="my-6" />
 

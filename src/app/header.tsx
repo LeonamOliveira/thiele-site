@@ -46,7 +46,7 @@ export default function Header() {
             transition={{ duration: 0.5, delay: 0.4 }}
             className="text-center md:text-right hover:scale-105 transition-transform duration-300"
           >
-            <strong>Central de atendimento: (11) 93011-1440</strong>
+            <strong><a href="http://wa.me/+5511930111440?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es">Central de atendimento: (11) 93011-1440</a></strong>
             <br />
             <strong>comercial@thiele.com.br</strong>
           </motion.div>
