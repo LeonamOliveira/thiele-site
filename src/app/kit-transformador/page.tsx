@@ -7,7 +7,6 @@ import { motion } from "framer-motion";
 import Footer from "../footer";
 import Header from "../header";
 
-
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
@@ -19,16 +18,16 @@ export default function Home() {
         transition={{ duration: 0.8 }}
         className="bg-gray-100 py-16 text-center px-4 md:px-8"
       >
-        <h1 className="text-3xl md:text-5xl font-bold text-gray-900">
+        <h1 className="text-3xl md:text-5xl font-bold text-gray-900" style={{color: "#6C6C6C"}}>
           Kit Bateria de Lítio Thiele
         </h1>
-        <p className="text-lg text-gray-600 mt-4 max-w-3xl mx-auto">
+        <p className="text-lg text-gray-600 mt-4 max-w-3xl mx-auto" style={{color: "#6C6C6C"}}>
           Autonomia Estendida para Limpeza Industrial. Máxima produtividade e eficiência com baterias de alta performance.
         </p>
         <motion.div whileHover={{ scale: 1.05 }}>
           <Button className="w-fit"
                 asChild
-                style={{ backgroundColor: "#2B418D" }}>
+                style={{ backgroundColor: "#B32C39" }}>
             <a href="http://wa.me/+5511930111440?text=Ol%C3%A1%2C%20eu%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20Kit%20Transformador.">
               Solicite um Orçamento
             </a>
@@ -44,10 +43,10 @@ export default function Home() {
         className="bg-white py-12 px-4 md:px-8"
       >
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-semibold text-gray-800">
+          <h2 className="text-2xl md:text-3xl font-semibold" style={{color: "#6C6C6C"}}>
             Benefícios do Kit de Bateria de Lítio
           </h2>
-          <p className="text-gray-600 mt-4">
+          <p className="mt-4" style={{color: "#6C6C6C"}}>
             Projetado para elevar a performance de suas máquinas, garantindo mais tempo de operação e menor custo de manutenção.
           </p>
 
@@ -81,8 +80,8 @@ export default function Home() {
             >
               <Card className="shadow-md">
                 <CardContent className="p-4">
-                  <h3 className="text-lg font-medium text-gray-900">{feature.title}</h3>
-                  <p className="text-gray-600 text-sm mt-2">{feature.desc}</p>
+                  <h3 className="text-lg font-medium" style={{color: "#6C6C6C"}}>{feature.title}</h3>
+                  <p className="text-sm mt-2" style={{color: "#6C6C6C"}}>{feature.desc}</p>
                 </CardContent>
               </Card>
             </motion.div>
@@ -93,7 +92,6 @@ export default function Home() {
 
       <Separator className="my-6" />
 
-      {/* Call to Action */}
       <motion.section
         initial={{ opacity: 0, scale: 0.9 }}
         whileInView={{ opacity: 1, scale: 1 }}
@@ -101,17 +99,17 @@ export default function Home() {
         transition={{ duration: 0.8 }}
         className="py-12 bg-gray-50 text-center"
       >
-        <h2 className="text-2xl font-semibold text-gray-900">
+        <h2 className="text-2xl font-semibold" style={{color: "#6C6C6C"}}>
           Maximize o Potencial das Suas Máquinas Thiele
         </h2>
-        <p className="text-gray-600 max-w-2xl mx-auto mt-4">
+        <p className="max-w-2xl mx-auto mt-4" style={{color: "#6C6C6C"}}>
           Invista no Kit de Bateria de Lítio Thiele e experimente mais autonomia, desempenho e durabilidade. 
           Entre em contato e descubra como podemos ajudar!
         </p>
         <motion.div whileHover={{ scale: 1.05 }}>
           <Button className="w-fit"
                 asChild
-                style={{ backgroundColor: "#2B418D" }}>
+                style={{ backgroundColor: "#B32C39" }}>
             <a href="http://wa.me/+5511930111440?text=Ol%C3%A1%2C%20eu%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20Kit%20Transformador.">
               Fale Conosco Agora
             </a>

@@ -65,7 +65,7 @@ const Feature: React.FC<FeatureProps> = ({
               <Button
                 className="w-fit"
                 asChild
-                style={{ backgroundColor: "#2B418D" }}
+                style={{ backgroundColor: "#B32C39" }}
               >
                 <Link href={link ?? "/"}>
                   {textButton}

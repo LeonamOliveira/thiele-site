@@ -3,7 +3,6 @@ import Footer from "./footer";
 import Feature from "../components/feature/feature";
 import { featureMachineText } from "@/components/feature/machines-features";
 import imageChumbo from "../../public/assets/chumbo.png";
-// import imageReposicao from "../../public/assets/reposicao.jpeg";
 import Image from "next/image";
 import CarouselSwiper from "@/components/carousel-swiper";
 import { Feedback } from "@/components/feedback";
@@ -36,8 +35,9 @@ export default function Home() {
         barraDePesquisa={true}
       />
       <Feature
-        title="Transforme sua máquina de chumbo ácido em lítio"
+        title="Transforme sua máquina de chumbo ácido em lítio 🔋"
         description={`
+          Experimente o Futuro da sua Operação com a Conversão para Lítio.
           Revolucione seus resultados com a tecnologia que está transformando o mercado.
         `}
         media={
