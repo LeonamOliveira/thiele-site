@@ -1,10 +1,10 @@
 import Header from "./header";
 import Footer from "./footer";
 import Feature from "../components/feature/feature";
-import { featureMachineText } from "@/components/feature/machines-features";
-import imageChumbo from "../../public/assets/chumbo.png";
-import Image from "next/image";
 import CarouselSwiper from "@/components/carousel-swiper";
+import Image from "next/image";
+import imageChumbo from "../../public/assets/chumbo.png";
+import { featureMachineText } from "@/components/feature/machines-features";
 import { Feedback } from "@/components/feedback";
 
 import imageTH100 from "../../public/assets/TH100/TH100 - 1.png";

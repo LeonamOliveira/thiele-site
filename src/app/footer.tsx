@@ -4,7 +4,6 @@ export default function Footer() {
     <section className="py-2" style={{color: '#2B418D', backgroundColor: '#D9D9D9'}}>
       <div className="container mx-auto px-4">
         <div className="mb-12">
-          {/* <span className="text-sm font-semibold"> Indústrias Thiele</span> */}
           <h1 className="mt-1 mb-3 text-3xl font-semibold text-balance md:text-4xl">
           <br />
           Central de Atendimento
@@ -13,7 +12,7 @@ export default function Footer() {
         <div className="grid gap-10 md:grid-cols-3">
           <div>
             <span className="mb-3 flex size-12 flex-col items-center justify-center rounded-full bg-accent">
-              <Mail className="h-6 w-auto" />
+              <Mail className="h-6 w-auto" style={{color: '#B32C39'}}/>
             </span>
             <p className="mb-2 text-lg font-semibold">Nosso E-mail</p>
             <a href="#" className="font-semibold hover:underline">
@@ -22,7 +21,7 @@ export default function Footer() {
           </div>
           <div>
             <span className="mb-3 flex size-12 flex-col items-center justify-center rounded-full bg-accent">
-              <MapPin className="h-6 w-auto" />
+              <MapPin className="h-6 w-auto"  style={{color: '#B32C39'}} />
             </span>
             <p className="mb-2 text-lg font-semibold">Nossa Localização</p>
             <a href="#" className="font-semibold hover:underline">
@@ -33,7 +32,7 @@ export default function Footer() {
           </div>
           <div>
             <span className="mb-3 flex size-12 flex-col items-center justify-center rounded-full bg-accent">
-              <Phone className="h-6 w-auto" />
+              <Phone className="h-6 w-auto"  style={{color: '#B32C39'}} />
             </span>
             <p className="mb-2 text-lg font-semibold"> Nosso Contato</p>
             <a href="#" className="font-semibold hover:underline">

@@ -3,8 +3,10 @@ import React, { useState } from 'react';
 import FeatureDialog from "./dialogMachine";
 import { Button } from "@/components/ui/button";
 import { Container, Section } from "../craft";
-import Link from "next/link";
 import { FeatureText } from './interfaces/feature-text.interface';
+import { motion } from "framer-motion";
+import { toast } from "sonner";
+import { MessageCircle } from 'lucide-react';
 
 interface FeatureProps {
   id?: string;
@@ -28,7 +30,7 @@ const Feature: React.FC<FeatureProps> = ({
   children,
   barraDePesquisa = false,
 }) => {
-  const [searchQuery, setSearchQuery] = useState(''); // Estado para a pesquisa
+  const [searchQuery, setSearchQuery] = useState('');
   const [filteredFeatures, setFilteredFeatures] = useState(features);
 
   const handleSearch = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -43,6 +45,10 @@ const Feature: React.FC<FeatureProps> = ({
     });
     
     setFilteredFeatures(filtered);
+  };
+
+  const handleClick = () => {
+    toast.success("Redirecionando para o WhatsApp...");
   };
 
   return (
@@ -62,15 +68,44 @@ const Feature: React.FC<FeatureProps> = ({
           ))}{" "}
           <div className="not-prose flex items-center gap-2">
             {textButton?.trim() && (
-              <Button
-                className="w-fit"
-                asChild
-                style={{ backgroundColor: "#B32C39" }}
+              <motion.a
+              href={link ?? "/"}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={handleClick}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="block"
+            >
+              <motion.div
+                animate={{
+                  scale: [1, 1.05, 1],
+                  boxShadow: [
+                    "0 0 0 rgba(0,0,0,0)",
+                    "0 0 20px rgba(43,65,141,0.35)",
+                    "0 0 0 rgba(0,0,0,0)",
+                  ],
+                }}
+                transition={{ repeat: Infinity, duration: 2 }}
               >
-                <Link href={link ?? "/"}>
+                <Button
+                  className="bg-[#B32C39] hover:bg-[#B32C39] text-white text-lg px-6 py-4 rounded-2xl shadow-xl transition-all duration-300 flex items-center gap-3"
+                  size="lg"
+                >
+                  <motion.div
+                    initial={{ rotate: 0 }}
+                    whileHover={{ rotate: -10 }}
+                    transition={{ type: "spring", stiffness: 300 }}
+                  >
+                    <MessageCircle className="w-5 h-5" />
+                  </motion.div>
                   {textButton}
-                </Link>
-              </Button>
+                </Button>
+              </motion.div>
+            </motion.a>
             )}
           </div>
         </div>
