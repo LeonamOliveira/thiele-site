@@ -73,24 +73,17 @@ const DetalhesProduto = () => {
           <div className="relative w-full h-80">
             {produtoDetalhe.carousel && (
               <CarouselSwiper images={produtoDetalhe.carousel}/>
-              // <Image
-              //   src={produtoDetalhe.image}
-              //   alt={produtoDetalhe.title}
-              //   layout="fill"
-              //   objectFit="cover"
-              //   className="rounded-lg shadow-lg"
-              // />
             )}
           </div>
 
           <div>
-            <h1 className="text-3xl font-bold text-gray-900 mb-4">{produtoDetalhe.title}</h1>
-            <p className="text-lg text-gray-700 mb-4">{produtoDetalhe.description}</p>
+            <h1 className="text-3xl font-bold text-gray-900 mb-4" style={{color: "#6C6C6C"}}>{produtoDetalhe.title}</h1>
+            <p className="text-lg mb-4" style={{color: "#6C6C6C"}}>{produtoDetalhe.description}</p>
 
             {produtoDetalhe.specifications && produtoDetalhe.specifications.length > 0 && (
               <div className="mb-6">
-                <h2 className="text-2xl font-semibold text-gray-800 mb-3">Especificações Técnicas</h2>
-                <ul className="list-disc pl-6 text-gray-700 space-y-2">
+                <h2 className="text-2xl font-semibold mb-3" style={{color: "#6C6C6C"}}>Especificações Técnicas</h2>
+                <ul className="list-disc pl-6 space-y-2" style={{color: "#6C6C6C"}}>
                   {produtoDetalhe.specifications.map((spec, index) => (
                     <li key={index}>{spec}</li>
                   ))}
