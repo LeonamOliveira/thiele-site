@@ -29,6 +29,8 @@ export default function Home() {
         <p className="text-lg text-gray-600 mt-4 max-w-3xl mx-auto" style={{color: "#6C6C6C"}}>
           Autonomia Estendida para Limpeza Industrial. Máxima produtividade e eficiência com baterias de alta performance.
         </p>
+        <Separator className="my-6" />
+
         <motion.div whileHover={{ scale: 1.05 }}>
           <Button className="w-fit"
                 asChild
@@ -54,7 +56,6 @@ export default function Home() {
           <p className="mt-4" style={{color: "#6C6C6C"}}>
             Projetado para elevar a performance de suas máquinas, garantindo mais tempo de operação e menor custo de manutenção.
           </p>
-
           <div className="grid md:grid-cols-2 gap-6 mt-6">
           {[
             {
@@ -113,6 +114,7 @@ export default function Home() {
           Invista no Kit de Bateria de Lítio Thiele e experimente mais autonomia, desempenho e durabilidade. 
           Entre em contato e descubra como podemos ajudar!
         </p>
+        <Separator className="my-6" />
         <motion.div whileHover={{ scale: 1.05 }}>
           <Button className="w-fit"
                 asChild

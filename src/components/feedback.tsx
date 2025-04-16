@@ -14,14 +14,14 @@ import { Container, Section } from "./craft";
 
 const testimonials = [
   {
-    id: "testimonial-1",
-    text: "A parceria com a Thiele nos ajuda a manter o Shopping São Jose sempre limpo e bem cuidado. Com equipamento de qualidade, suporte eficiente e um atendimento sempre rápido, contamos com eles para oferecer um ambiente agradável para nossos clientes todos os dias!",
-    name: "Shopping São José",
-  },
-  {
     id: "testimonial-2",
     text: "É um grande prazer para nós falar sobre a parceria com a Thiele, uma empresa que se destaca pela excelência no aluguel de máquinas e equipamentos. Ao longo de nossa parceria, sempre contamos com um atendimento ágil, soluções eficientes e equipamentos de alta qualidade, o que tem sido essencial para nossas operações. A Thiele demonstra profissionalismo e comprometimento em cada entrega, garantindo não apenas a melhor infraestrutura, mas também um suporte técnico diferenciado. É uma parceria de grande valor para nós, e temos orgulho em recomendar seus serviços.",
     name: "Inove Terceirização",
+  },
+  {
+    id: "testimonial-1",
+    text: "A parceria com a Thiele nos ajuda a manter o Shopping São Jose sempre limpo e bem cuidado. Com equipamento de qualidade, suporte eficiente e um atendimento sempre rápido, contamos com eles para oferecer um ambiente agradável para nossos clientes todos os dias!",
+    name: "Shopping São José",
   }
 ];
 
