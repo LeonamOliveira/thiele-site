@@ -111,7 +111,7 @@ export const featureMachineText: FeatureText[] = [
     image: image1TH300.src,
     capacity: "Tanque de 60L",
     productivity: "Produtividade de 2000m²/h",
-    battery: "Autonima de 4 à 5 horas",
+    battery: "Autonomia de 4 à 5 horas",
     carousel: [
       image3TH300,
       image4TH300,
