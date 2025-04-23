@@ -221,7 +221,7 @@ export const featureMachineText: FeatureText[] = [
     title: "TH900",
     href: "/",
     description:
-      "A força da limpeza profissional. Produtividade de 4500 m²/h, tanques de 115L/125L e tração potente para grandes áreas e alta pressão (4.15Mpa).",
+      "A força da limpeza profissional. Produtividade de 4500 m²/h, tanques de 115L/125L e tração potente para grandes áreas e alta pressão.",
     cta: "Solicite um orçamento",
     message: "http://wa.me/+5511930111440?text=Ol%C3%A1%2C%20eu%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20da%20m%C3%A1quina%20TH900",
     image: imageTH900.src,
