@@ -13,4 +13,5 @@ export interface FeatureText {
   specifications?: string[];
   message?: string;
   carousel?: StaticImageData[];
+  typeEnergy?: string;
 }

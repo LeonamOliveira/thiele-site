@@ -37,7 +37,7 @@ const FeatureDialog: React.FC<FeatureDialogProps> = ({ feature }) => {
                 )}
                 {feature.battery && (
                   <div>
-                    <p className="font-semibold text-sm text-gray-700">Fonte de Energia</p>
+                    <p className="font-semibold text-sm text-gray-700">{feature.typeEnergy}</p>
                     <p className="text-gray-600 text-xs">{feature.battery}</p>
                   </div>
                 )}

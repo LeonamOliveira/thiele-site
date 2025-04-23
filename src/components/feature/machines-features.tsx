@@ -81,6 +81,7 @@ export const featureMachineText: FeatureText[] = [
     image: image1TH100.src,
     capacity: "Tanques de 3.5/4.5L",
     productivity: "Produtividade de 1000 m²/h",
+    typeEnergy: "Bateria",
     battery: "Autonomia de 1.5 horas",
     specifications: [
       "Tanques de Solução/Recuperação de 3.5/4.5 L",
@@ -111,6 +112,7 @@ export const featureMachineText: FeatureText[] = [
     image: image1TH300.src,
     capacity: "Tanque de 60L",
     productivity: "Produtividade de 2000m²/h",
+    typeEnergy: "Bateria",
     battery: "Autonomia de 4 à 5 horas",
     carousel: [
       image3TH300,
@@ -142,6 +144,7 @@ export const featureMachineText: FeatureText[] = [
     capacity: "Tanque de 55L",
     productivity: "Produtividade de 3000m²/h",
     battery: "Autonomia de 4 à 5 horas",
+    typeEnergy: "Bateria",
     specifications: [
       "Tanques de Solução/Recuperação: 55/60 L",
       "Largura de Limpeza: 530 mm",
@@ -163,7 +166,8 @@ export const featureMachineText: FeatureText[] = [
     image: image1TH700.src,
     capacity: "Tanque de 100 | 110 litros",
     productivity: "Produtividade de 3000 m²/h",
-    battery: "Autonomia de 3 à 4 horas",
+    typeEnergy: "Bateria",
+    battery: "Autonomia de 4 à 5 horas",
     carousel: [
       image1TH700,
       image5TH700,
@@ -195,7 +199,8 @@ export const featureMachineText: FeatureText[] = [
     image: imageTH800.src,
     capacity: "Tanques de 90 | 100 litros",
     productivity: "Produtividade de 3000 m²/h",
-    battery: "Autonomia de 3 à 4 horas",
+    typeEnergy: "Bateria",
+    battery: "Autonomia de 4 à 5 horas",
     carousel: [
       image1TH800,
       image2TH800,
@@ -227,7 +232,8 @@ export const featureMachineText: FeatureText[] = [
     image: imageTH900.src,
     capacity: "Tanques de 120|130 litros",
     productivity: "Produtividade de 3500 m²/h",
-    battery: "Autonomia de 3 à 4 horas",
+    typeEnergy: "Bateria",
+    battery: "Autonomia de 4 à 6 horas",
     carousel: [
       image1TH900,
       image2TH900,
@@ -256,6 +262,7 @@ export const featureMachineText: FeatureText[] = [
     image: imageTH1000.src,
     capacity: "Tanques de 155 | 170 litros",
     productivity: "Produtividade de 4500 m²/h",
+    typeEnergy: "Bateria",
     battery: "Autonomia de 3 à 4 horas",
     carousel: [
       image1TH1000,
@@ -271,7 +278,7 @@ export const featureMachineText: FeatureText[] = [
       "Largura de Limpeza: 1200 mm",
       "Velocidade da Escova de Disco (RPM): 180",
       "Produtividade: 4500 m²/h",
-      "Autonomia: 4-6 horas",
+      "Autonomia de 4 à 6 horas",
       "Bateria de Lítio: 24V 200Ah",
       "Peso Total: 435 kg"
     ]
@@ -330,7 +337,8 @@ export const featureMachineText: FeatureText[] = [
     image: imageExtratora.src,
     capacity: "Motor: 15hp",
     productivity: "Consumo de Álcool: 1,9L/h",
-    battery: "Elétrica, à bateria (12V)",
+    typeEnergy: "Consumo",
+    battery: "Combustível: Etanol",
     carousel: [
       extratora1,
       extratora2,
@@ -361,7 +369,8 @@ export const featureMachineText: FeatureText[] = [
     image: imagePolidora.src,
     capacity: "Motor: 16hp",
     productivity: "Consumo de Etanol: 1,9l/h",
-    battery: "Autonomia de 6 à 8 horas",
+    typeEnergy: "Consumo",
+    battery: "Combustível: Etanol",
     carousel: [
       polidora1,
       polidora2,
