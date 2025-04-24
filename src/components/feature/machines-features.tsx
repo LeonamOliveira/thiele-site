@@ -142,14 +142,14 @@ export const featureMachineText: FeatureText[] = [
     message: "http://wa.me/+5511930111440?text=Ol%C3%A1%2C%20eu%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20da%20m%C3%A1quina%20TH310",
     image: imageTH310.src,
     capacity: "Tanque de 60 | 65L",
-    productivity: "Produtividade de 2500m²/h",
+    productivity: "Produtividade de 3000m²/h",
     battery: "Autonomia de 4 à 5 horas",
     typeEnergy: "Bateria",
     specifications: [
       "Tanques de Solução/Recuperação: 55 L",
       "Largura de Limpeza: 530 mm",
       "Velocidade da Escova de Disco (RPM): 180",
-      "Produtividade: 2500 m²/h",
+      "Produtividade: 3000 m²/h",
       "Autonomia: 4-5 horas",
       "Bateria de Lítio: 24V 100Ah",
       "Peso Total: 154 kg"
