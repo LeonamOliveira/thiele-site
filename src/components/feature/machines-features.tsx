@@ -123,10 +123,10 @@ export const featureMachineText: FeatureText[] = [
       image10TH300,
     ],
     specifications: [
-      "Tanques de Solução/Recuperação: 95/107L", 
+      "Tanques de Solução/Recuperação: 60/65L", 
       "Largura de Limpeza: 1000 mm",
       "Velocidade da Escova de Disco (RPM): 180 ",
-      "Produtividade: 3000 m²/h",
+      "Produtividade: 2500 m²/h",
       "Autonomia: 4-5 horas",
       "Bateria de Lítio: 24V 200Ah",
       "Peso Total: 154 kg",
@@ -146,7 +146,7 @@ export const featureMachineText: FeatureText[] = [
     battery: "Autonomia de 4 à 5 horas",
     typeEnergy: "Bateria",
     specifications: [
-      "Tanques de Solução/Recuperação: 55/60 L",
+      "Tanques de Solução/Recuperação: 55 L",
       "Largura de Limpeza: 530 mm",
       "Velocidade da Escova de Disco (RPM): 180",
       "Produtividade: 2500 m²/h",
@@ -179,7 +179,7 @@ export const featureMachineText: FeatureText[] = [
       image11TH700
     ],
     specifications: [
-      "Tanques de Solução/Recuperação: 95/107L",
+      "Tanques de Solução/Recuperação: 100 | 110L",
       "Largura de Limpeza: 1000mm",
       "Velocidade da Escova de Disco (RPM): 180",
       "Produtividade: 3000 m²/h",
@@ -212,10 +212,10 @@ export const featureMachineText: FeatureText[] = [
       image8TH800
     ],
     specifications: [
-      "Tanques de Solução/Recuperação: 85/90 L",
+      "Tanques de Solução/Recuperação: 85 | 95 L",
       "Largura de Limpeza: 900 mm",
       "Velocidade da Escova de Disco (RPM): 180",
-      "Produtividade: 3300 m²/h",
+      "Produtividade: 3000 m²/h",
       "Autonomia: 4-5 horas",
       "Bateria de Lítio: 24V 100A",
       "Peso Total: 258 kg"
@@ -242,7 +242,7 @@ export const featureMachineText: FeatureText[] = [
       image5TH900
     ],
     specifications: [
-      "Tanques de Solução/Recuperação: 115/125 L",
+      "Tanques de Solução/Recuperação: 120 | 130 L",
       "Largura de Limpeza: 1020 mm",
       "Velocidade da Escova de Disco (RPM): 180",
       "Produtividade: 4500 m²/h",
@@ -274,7 +274,7 @@ export const featureMachineText: FeatureText[] = [
       image7TH1000,
     ],
     specifications: [
-      "Tanques de Solução/Recuperação: 150/165 L",
+      "Tanques de Solução/Recuperação: 155 | 170 L",
       "Largura de Limpeza: 1200 mm",
       "Velocidade da Escova de Disco (RPM): 180",
       "Produtividade: 4500 m²/h",
@@ -336,7 +336,7 @@ export const featureMachineText: FeatureText[] = [
     message: "http://wa.me/+5511930111440?text=Ol%C3%A1%2C%20eu%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20da%20m%C3%A1quina%20TH2000",
     image: imageExtratora.src,
     capacity: "Motor: 15hp",
-    productivity: "Consumo de Álcool: 1,9L/hora",
+    productivity: "Consumo de Etanol: 1,9L/hora",
     typeEnergy: "Consumo",
     battery: "Combustível: Etanol",
     carousel: [
@@ -350,7 +350,7 @@ export const featureMachineText: FeatureText[] = [
       extratora8
     ],
     specifications: [
-      "Tanques de Solução/Recuperação: 390/400 L",
+      "Combustível: Etanol",
       "Largura de Limpeza: 1380 mm",
       "Pressão da Escova de Disco (Mpa): 4.8", 
       "Produtividade: 7500 m²/h",
