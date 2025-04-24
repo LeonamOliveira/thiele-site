@@ -137,11 +137,11 @@ export const featureMachineText: FeatureText[] = [
     title: "TH310",
     href: "/",
     description:
-      "Limpeza eficiente e sem esforço! Lavadora tracionada com alta produtividade (2500 m²/h) e autonomia entre 4-5 horas. Ideal para grandes áreas.",
+      "Limpeza eficiente e sem esforço! Lavadora tracionada com alta produtividade (3000 m²/h) e autonomia entre 4-5 horas. Ideal para grandes áreas.",
     cta: "Solicite um orçamento",
     message: "http://wa.me/+5511930111440?text=Ol%C3%A1%2C%20eu%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20da%20m%C3%A1quina%20TH310",
     image: imageTH310.src,
-    capacity: "Tanque de 55L",
+    capacity: "Tanque de 60 | 65L",
     productivity: "Produtividade de 2500m²/h",
     battery: "Autonomia de 4 à 5 horas",
     typeEnergy: "Bateria",
