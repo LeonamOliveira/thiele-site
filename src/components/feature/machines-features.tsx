@@ -231,7 +231,7 @@ export const featureMachineText: FeatureText[] = [
     message: "http://wa.me/+5511930111440?text=Ol%C3%A1%2C%20eu%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20da%20m%C3%A1quina%20TH900",
     image: imageTH900.src,
     capacity: "Tanques de 120|130 litros",
-    productivity: "Produtividade de 3500 m²/h",
+    productivity: "Produtividade de 4500 m²/h",
     typeEnergy: "Bateria",
     battery: "Autonomia de 4 à 6 horas",
     carousel: [
