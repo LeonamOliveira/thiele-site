@@ -8,7 +8,6 @@ import Footer from "../footer";
 import Header from "../header";
 import CarouselSwiper from "@/components/carousel-swiper";
 import bateria1 from '../../../public/assets/bateria/bateria1.jpg';
-import bateria2 from '../../../public/assets/bateria/bateria2.jpg';
 import bateria3 from '../../../public/assets/bateria/bateria3.jpg';
 import bateria4 from '../../../public/assets/bateria/bateria4.jpg';
 import bateria5 from '../../../public/assets/bateria/bateria5.jpg';
@@ -16,7 +15,7 @@ import bateria6 from '../../../public/assets/bateria/bateria6.jpg';
 import bateria7 from '../../../public/assets/bateria/bateria7.jpg';
 
 export default function Home() {
-  const images = [bateria1, bateria2, bateria3, bateria4, bateria5, bateria6, bateria7];
+  const images = [bateria1, bateria3, bateria4, bateria5, bateria6, bateria7];
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
