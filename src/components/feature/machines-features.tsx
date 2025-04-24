@@ -75,7 +75,7 @@ export const featureMachineText: FeatureText[] = [
     title: "TH100",
     href: "/",
     description:
-      "A limpadora TH 100 está disponível em duas configurações, que se adaptam perfeitamente às necessidades do seu negócio.",
+      "Poderosa e eficiente, garante 1000 m²/h de limpeza impecável, com autonomia de 1.5 horas. Sua aliada perfeita para um ambiente sempre impecável.",
     cta: "Solicite um orçamento",
     message: "http://wa.me/+5511930111440?text=Ol%C3%A1%2C%20eu%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20da%20m%C3%A1quina%20TH100",
     image: image1TH100.src,
@@ -106,11 +106,11 @@ export const featureMachineText: FeatureText[] = [
     title: "TH300",
     href: "/",
     description:
-      "Limpeza profissional para grandes áreas. Alta produtividade (2500 m²/h) e autonomia de 4-5 horas. Ideal para empresas que buscam eficiência.",
+      "Limpeza profissional para grandes áreas. Alta produtividade (2500 m²/h) e autonomia de 4-5 horas. Ideal para empresas que buscam eficiência e resultados impecáveis.",
     cta: "Solicite um orçamento",
     message: "http://wa.me/+5511930111440?text=Ol%C3%A1%2C%20eu%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20da%20m%C3%A1quina%20TH300",
     image: image1TH300.src,
-    capacity: "Tanque de 60L",
+    capacity: "Tanque de 60 | 65 litros",
     productivity: "Produtividade de 2500m²/h",
     typeEnergy: "Bateria",
     battery: "Autonomia de 4 à 5 horas",
@@ -137,7 +137,7 @@ export const featureMachineText: FeatureText[] = [
     title: "TH310",
     href: "/",
     description:
-      "Limpeza eficiente e sem esforço! Lavadora tracionada com alta produtividade (2500 m²/h) e autonomia de 4-5 horas. Ideal para grandes áreas.",
+      "Limpeza eficiente e sem esforço! Lavadora tracionada com alta produtividade (2500 m²/h) e autonomia entre 4-5 horas. Ideal para grandes áreas.",
     cta: "Solicite um orçamento",
     message: "http://wa.me/+5511930111440?text=Ol%C3%A1%2C%20eu%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20da%20m%C3%A1quina%20TH310",
     image: imageTH310.src,
@@ -160,7 +160,7 @@ export const featureMachineText: FeatureText[] = [
     title: "TH700",
     href: "/",
     description:
-      "A solução profissional para limpeza de grandes áreas. Alta produtividade (3000 m²/h) e tanques de 95L/107L para máxima eficiência e autonomia.",
+      "A solução profissional para limpeza de grandes áreas. Alta produtividade (3000 m²/h) e tanques de 100L | 110L para máxima eficiência e autonomia.",
     cta: "Solicite um orçamento",
     message: "http://wa.me/+5511930111440?text=Ol%C3%A1%2C%20eu%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20da%20m%C3%A1quina%20TH700",
     image: image1TH700.src,
@@ -193,7 +193,7 @@ export const featureMachineText: FeatureText[] = [
     title: "TH800",
     href: "/",
     description:
-      "Limpeza profissional de alta performance.  Produtividade de 3300 m²/h, tanques de 85L | 90L e tração potente para grandes áreas.",
+      "Limpeza profissional de alta performance.  Produtividade de 3000 m²/h, tanques de 85L | 95L e tração potente para grandes áreas.",
     cta: "Solicite um orçamento",
     message: "http://wa.me/+5511930111440?text=Ol%C3%A1%2C%20eu%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20da%20m%C3%A1quina%20TH800",
     image: imageTH800.src,
@@ -256,7 +256,7 @@ export const featureMachineText: FeatureText[] = [
     title: "TH1000",
     href: "/",
     description:
-      "Máxima performance em limpeza profissional. Produtividade de 4500 m²/h, tanques de 155L | 170L e tração potente para grandes áreas e alta pressão.",
+      "Máxima performance em limpeza profissional. Produtividade de 4500 m²/h, tanques de 155|170 litros e tração potente para grandes áreas.",
     cta: "Solicite um orçamento",
     message: "http://wa.me/+5511930111440?text=Ol%C3%A1%2C%20eu%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20da%20m%C3%A1quina%20TH1000",
     image: imageTH1000.src,
