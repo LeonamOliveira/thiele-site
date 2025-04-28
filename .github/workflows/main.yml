@@ -28,10 +28,6 @@ jobs:
         run: npm run build # Assumindo que 'npm run build' executa 'next build'
         # Ou execute diretamente:
         # run: npx next build
-        env:
-          # Suas variáveis de ambiente de build, se houver
-          # NEXT_PUBLIC_API_URL: ${{ secrets.NEXT_PUBLIC_API_URL }}
-
       # 5. Faz o deploy da pasta 'out' via FTP (esta parte não muda)
       - name: FTP Deploy Locaweb
         uses: locaweb/ftp-deploy@1.0.0
