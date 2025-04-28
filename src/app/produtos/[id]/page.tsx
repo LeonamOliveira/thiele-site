@@ -1,16 +1,16 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
+import CarouselSwiper from "@/components/carousel-swiper";
+import Header from "@/app/header";
+import Footer from "@/app/footer";
 import { useParams } from "next/navigation";
 import { FeatureText } from "@/components/feature/interfaces/feature-text.interface";
 import { featureMachineText } from "@/components/feature/machines-features";
-import Header from "@/app/header";
-import Footer from "@/app/footer";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { MessageCircle } from "lucide-react";
 import { toast } from "sonner";
-import CarouselSwiper from "@/components/carousel-swiper";
 
 const DetalhesProduto = () => {
   const { id } = useParams();
