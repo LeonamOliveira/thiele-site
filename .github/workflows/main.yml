@@ -1,5 +1,4 @@
 - name: FTP Deploy Locaweb
-  # You may pin to the exact commit or the version.
   # uses: locaweb/ftp-deploy@a69dfe5b26c55007658dce15a17917250282f9cc
   uses: locaweb/ftp-deploy@1.0.0
   with:
@@ -12,6 +11,5 @@
     localDir: # optional, default is .
     # Remote directory
     remoteDir: # optional, default is public_html
-    # Additional mirror command options
     options: # optional, default is 
           
