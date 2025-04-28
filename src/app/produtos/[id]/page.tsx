@@ -11,13 +11,10 @@ export async function generateStaticParams() {
   return paths.filter(path => path.id !== '');
 }
 
-type DetalhesProdutoPageProps = {
-  params: { id: string };
-  searchParams?: { [key: string]: string | string[] | undefined };
-};
+type Params = Promise<{id: string}>
 
-const DetalhesProdutoPage = async (props: DetalhesProdutoPageProps) => {
-  const { id } = await props.params;
+const DetalhesProdutoPage = async ({params}: {params: Params}) => {
+  const { id } = await params;
 
   const produtoDetalhe = featureMachineText.find(
     (item) => item.id?.toString() === id
