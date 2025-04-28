@@ -1,41 +1,29 @@
 name: Deploy Next.js Static Export via FTP
 on:
   push:
-    branches: [ main ] # Ou a branch que você usa para deploy
-
+    branches: [ main ]
 jobs:
   deploy:
     name: Deploy Static Site
     runs-on: ubuntu-latest
     steps:
-      # 1. Faz o checkout do código do repositório
       - name: Checkout Repository
-        uses: actions/checkout@v4
-
-      # 2. Configura o ambiente Node.js
+        uses: actions/checkout@v2
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18' # Ou a versão compatível
-          cache: 'npm' # ou 'yarn'
-
-      # 3. Instala as dependências do projeto
+          node-version: '18'
+          cache: 'npm'
       - name: Install Dependencies
-        run: npm ci # ou 'yarn install --frozen-lockfile'
-
-      # 4. Executa APENAS o build (o export é automático devido ao next.config.js)
+        run: npm ci
       - name: Build Next.js App
-        run: npm run build # Assumindo que 'npm run build' executa 'next build'
-        # Ou execute diretamente:
-        # run: npx next build
-      # 5. Faz o deploy da pasta 'out' via FTP (esta parte não muda)
+        run: npm run build
+      - name: Verify Build Output directory
+        run: ls -la
       - name: FTP Deploy Locaweb
         uses: locaweb/ftp-deploy@1.0.0
         with:
           host: ${{ secrets.HOST }}
           user: ${{ secrets.USER }}
           password: ${{ secrets.PASS }}
-          # A pasta local ainda será 'out', criada automaticamente pelo 'next build'
           localDir: "out"
-          # remoteDir: 'public_html' # Ajuste se necessário
-          # options: '--delete'      # Ajuste se necessário
