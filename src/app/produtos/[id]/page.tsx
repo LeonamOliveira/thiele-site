@@ -1,10 +1,8 @@
-// NO "use client" here - This is now primarily a Server Component
-
 import React from "react";
-import Header from "@/app/header"; // Assuming Header is compatible
-import Footer from "@/app/footer"; // Assuming Footer is compatible
+import Header from "@/app/header";
+import Footer from "@/app/footer";
 import { featureMachineText } from "@/components/feature/machines-features";
-import ProdutoClientUI from './produto-cliente'; // Import the new Client Component
+import ProdutoClientUI from './produto-cliente';
 
 export async function generateStaticParams() {
   const paths = featureMachineText.map((produto) => ({
@@ -13,13 +11,7 @@ export async function generateStaticParams() {
   return paths.filter(path => path.id !== '');
 }
 
-interface DetalhesProdutoProps {
-  params: {
-    id: string;
-  };
-}
-
-const DetalhesProdutoPage = async ({ params }: DetalhesProdutoProps) => {
+const DetalhesProdutoPage = async ({params}: {params: {id: string}}) => {
   const { id } = await params;
 
   const produtoDetalhe = featureMachineText.find(
