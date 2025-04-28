@@ -153,7 +153,15 @@ export const featureMachineText: FeatureText[] = [
       "Autonomia: 4-5 horas",
       "Bateria de Lítio: 24V 100Ah",
       "Peso Total: 154 kg"
-    ]
+    ],
+    carousel: [
+      image3TH300,
+      image4TH300,
+      image5TH300,
+      image7TH300,
+      image8TH300,
+      image10TH300,
+    ],
   },
   {
     id: "4",
