@@ -1,52 +1,45 @@
-# Nome do seu workflow (opcional, mas recomendado)
-name: CI/CD - Deploy FTP Locaweb
-
-# Define quando o workflow será executado (gatilho/trigger)
-# Exemplo: executar em push para a branch 'main'
+name: Deploy Next.js Static Export via FTP
 on:
   push:
-    branches: [ main ] # Ajuste para o nome da sua branch principal (pode ser 'master')
-  # Você pode adicionar outros gatilhos, como pull_request, schedule, etc.
-  # workflow_dispatch: # Permite disparar manualmente pela interface do GitHub
+    branches: [ main ] # Ou a branch que você usa para deploy
 
-# Define os trabalhos (jobs) que serão executados no workflow
 jobs:
-  # Nome do job (você pode escolher qualquer nome)
-  deploy-ftp:
-    # O tipo de máquina virtual (runner) onde o job será executado
+  deploy:
+    name: Deploy Static Site
     runs-on: ubuntu-latest
-
-    # Sequência de passos (steps) a serem executados neste job
     steps:
-      # 1. Passo essencial: Fazer o checkout do código do seu repositório
-      #    Para que o runner tenha acesso aos arquivos a serem enviados
-      - name: Checkout repository code
-        uses: actions/checkout@v4 # É recomendado usar uma versão específica
+      # 1. Faz o checkout do código do repositório
+      - name: Checkout Repository
+        uses: actions/checkout@v4
 
-      # 2. O seu passo de deploy FTP
+      # 2. Configura o ambiente Node.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18' # Ou a versão compatível
+          cache: 'npm' # ou 'yarn'
+
+      # 3. Instala as dependências do projeto
+      - name: Install Dependencies
+        run: npm ci # ou 'yarn install --frozen-lockfile'
+
+      # 4. Executa APENAS o build (o export é automático devido ao next.config.js)
+      - name: Build Next.js App
+        run: npm run build # Assumindo que 'npm run build' executa 'next build'
+        # Ou execute diretamente:
+        # run: npx next build
+        env:
+          # Suas variáveis de ambiente de build, se houver
+          # NEXT_PUBLIC_API_URL: ${{ secrets.NEXT_PUBLIC_API_URL }}
+
+      # 5. Faz o deploy da pasta 'out' via FTP (esta parte não muda)
       - name: FTP Deploy Locaweb
         uses: locaweb/ftp-deploy@1.0.0
         with:
-          # Host FTP (obrigatório) - Buscando do secrets do repositório
           host: ${{ secrets.HOST }}
-          # Usuário FTP (obrigatório) - Buscando do secrets do repositório
           user: ${{ secrets.USER }}
-          # Senha FTP (obrigatório) - Buscando do secrets do repositório
           password: ${{ secrets.PASS }}
-
-          # --- Parâmetros Opcionais ---
-          # Se você não precisar alterar os valores padrão, pode remover ou comentar estas linhas
-
-          # Forçar conexão SSL (opcional, padrão: false)
-          # forceSsl: false
-
-          # Diretório local que será enviado (opcional, padrão: '.')
-          # Seus arquivos da aplicação, '.' significa a raiz do repositório após o checkout
-          # localDir: '.'
-
-          # Diretório remoto no servidor FTP onde os arquivos serão enviados (opcional, padrão: 'public_html')
-          # remoteDir: 'public_html' # Ou o caminho correto no seu FTP
-
-          # Opções adicionais para o comando lftp (opcional, padrão: '')
-          # Exemplo: '--delete' para remover arquivos no destino que não existem na origem
-          # options: '--delete --verbose'
+          # A pasta local ainda será 'out', criada automaticamente pelo 'next build'
+          localDir: "out"
+          # remoteDir: 'public_html' # Ajuste se necessário
+          # options: '--delete'      # Ajuste se necessário
