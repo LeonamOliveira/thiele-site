@@ -2,7 +2,7 @@ import React from "react";
 import Header from "@/app/header";
 import Footer from "@/app/footer";
 import { featureMachineText } from "@/components/feature/machines-features";
-// import ProdutoClientUI from './produto-cliente';
+import ProdutoClientUI from './produto-cliente';
 
 export async function generateStaticParams() {
   const paths = featureMachineText.map((produto) => ({
@@ -34,11 +34,11 @@ const DetalhesProdutoPage = async ({params}: {params: Params}) => {
 
   return (
     <>
-      {/*<Header />
+      <Header />
        <main>
         <ProdutoClientUI produtoDetalhe={produtoDetalhe} />
       </main>
-      <Footer /> */} 
+      <Footer />
     </>
   );
 };
