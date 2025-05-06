@@ -1,8 +1,8 @@
 import { FeatureText } from "./interfaces/feature-text.interface";
 
-import imageTH1000 from "../../../public/assets/TH1000 - 1.png";
-import imageTH1200 from "../../../public/assets/TH1200 - 1.png";
-import imageTH2000 from "../../../public/assets/TH2000 - 1.png";
+import imageTH1000 from "../../../public/assets/TH1000 - 1.webp";
+import imageTH1200 from "../../../public/assets/TH1200 - 1.webp";
+import imageTH2000 from "../../../public/assets/TH2000 - 1.webp";
 
 export const featureRepositionText: FeatureText[] = [
   {

@@ -7,12 +7,12 @@ import { motion } from "framer-motion";
 import Footer from "../footer";
 import Header from "../header";
 import CarouselSwiper from "@/components/carousel-swiper";
-import bateria1 from '../../../public/assets/bateria/bateria1.jpg';
-import bateria3 from '../../../public/assets/bateria/bateria3.jpg';
-import bateria4 from '../../../public/assets/bateria/bateria4.jpg';
-import bateria5 from '../../../public/assets/bateria/bateria5.jpg';
-import bateria6 from '../../../public/assets/bateria/bateria6.jpg';
-import bateria7 from '../../../public/assets/bateria/bateria7.jpg';
+import bateria1 from '../../../public/assets/bateria/bateria1.webp';
+import bateria3 from '../../../public/assets/bateria/bateria3.webp';
+import bateria4 from '../../../public/assets/bateria/bateria4.webp';
+import bateria5 from '../../../public/assets/bateria/bateria5.webp';
+import bateria6 from '../../../public/assets/bateria/bateria6.webp';
+import bateria7 from '../../../public/assets/bateria/bateria7.webp';
 
 export default function Home() {
   const images = [bateria1, bateria3, bateria4, bateria5, bateria6, bateria7];

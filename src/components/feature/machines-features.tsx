@@ -1,73 +1,73 @@
 import { FeatureText } from "./interfaces/feature-text.interface";
 
-import image1TH100 from "../../../public/assets/TH100/TH100 - 1.png";
-import image2TH100 from '../../../public/assets/TH100/TH100 - 2.png';
-import image3TH100 from '../../../public/assets/TH100/TH100 - 3.png';
-import image5TH100 from '../../../public/assets/TH100/TH100 - 5.png';
-import image6TH100 from '../../../public/assets/TH100/TH100 - 6.png';
-import image7TH100 from '../../../public/assets/TH100/TH100 - 7.png';
+import image1TH100 from "../../../public/assets/TH100/TH100 - 1.webp";
+import image2TH100 from '../../../public/assets/TH100/TH100 - 2.webp';
+import image3TH100 from '../../../public/assets/TH100/TH100 - 3.webp';
+import image5TH100 from '../../../public/assets/TH100/TH100 - 5.webp';
+import image6TH100 from '../../../public/assets/TH100/TH100 - 6.webp';
+import image7TH100 from '../../../public/assets/TH100/TH100 - 7.webp';
 
-import image1TH300 from '../../../public/assets/TH300/TH300 - 1.png';
-import image3TH300 from '../../../public/assets/TH300/TH300 - 3.png';
-import image4TH300 from '../../../public/assets/TH300/TH300 - 4.png';
-import image5TH300 from '../../../public/assets/TH300/TH300 - 5.png';
-import image7TH300 from '../../../public/assets/TH300/TH300 - 7.png';
-import image8TH300 from '../../../public/assets/TH300/TH300 - 8.png';
-import image10TH300 from '../../../public/assets/TH300/TH300 - 10.png';
+import image1TH300 from '../../../public/assets/TH300/TH300 - 1.webp';
+import image3TH300 from '../../../public/assets/TH300/TH300 - 3.webp';
+import image4TH300 from '../../../public/assets/TH300/TH300 - 4.webp';
+import image5TH300 from '../../../public/assets/TH300/TH300 - 5.webp';
+import image7TH300 from '../../../public/assets/TH300/TH300 - 7.webp';
+import image8TH300 from '../../../public/assets/TH300/TH300 - 8.webp';
+import image10TH300 from '../../../public/assets/TH300/TH300 - 10.webp';
 
-import image1TH700 from '../../../public/assets/TH700/TH700 - 1.png';
-import image5TH700 from '../../../public/assets/TH700/TH700 - 5.png';
-import image6TH700 from '../../../public/assets/TH700/TH700 - 6.png';
-import image7TH700 from '../../../public/assets/TH700/TH700 - 7.png';
-import image8TH700 from '../../../public/assets/TH700/TH700 - 8.png';
-import image9TH700 from '../../../public/assets/TH700/TH700 - 9.png';
-import image10TH700 from '../../../public/assets/TH700/TH700 - 10.png';
-import image11TH700 from '../../../public/assets/TH700/TH700 - 11.png';
+import image1TH700 from '../../../public/assets/TH700/TH700 - 1.webp';
+import image5TH700 from '../../../public/assets/TH700/TH700 - 5.webp';
+import image6TH700 from '../../../public/assets/TH700/TH700 - 6.webp';
+import image7TH700 from '../../../public/assets/TH700/TH700 - 7.webp';
+import image8TH700 from '../../../public/assets/TH700/TH700 - 8.webp';
+import image9TH700 from '../../../public/assets/TH700/TH700 - 9.webp';
+import image10TH700 from '../../../public/assets/TH700/TH700 - 10.webp';
+import image11TH700 from '../../../public/assets/TH700/TH700 - 11.webp';
 
-import image1TH800 from '../../../public/assets/TH800/TH800 - 1.png';
-import image2TH800 from '../../../public/assets/TH800/TH800 - 2.png';
-import image3TH800 from '../../../public/assets/TH800/TH800 - 3.png';
-import image4TH800 from '../../../public/assets/TH800/TH800 - 4.png';
-import image5TH800 from '../../../public/assets/TH800/TH800 - 5.png';
-import image6TH800 from '../../../public/assets/TH800/TH800 - 6.png';
-import image7TH800 from '../../../public/assets/TH800/TH800 - 7.png';
-import image8TH800 from '../../../public/assets/TH800/TH800 - 8.png';
+import image1TH800 from '../../../public/assets/TH800/TH800 - 1.webp';
+import image2TH800 from '../../../public/assets/TH800/TH800 - 2.webp';
+import image3TH800 from '../../../public/assets/TH800/TH800 - 3.webp';
+import image4TH800 from '../../../public/assets/TH800/TH800 - 4.webp';
+import image5TH800 from '../../../public/assets/TH800/TH800 - 5.webp';
+import image6TH800 from '../../../public/assets/TH800/TH800 - 6.webp';
+import image7TH800 from '../../../public/assets/TH800/TH800 - 7.webp';
+import image8TH800 from '../../../public/assets/TH800/TH800 - 8.webp';
 
-import image1TH900 from '../../../public/assets/TH900/TH900 - 1.png';
-import image2TH900 from '../../../public/assets/TH900/TH900 - 2.png';
-import image3TH900 from '../../../public/assets/TH900/TH900 - 3.png';
-import image4TH900 from '../../../public/assets/TH900/TH900 - 4.png';
-import image5TH900 from '../../../public/assets/TH900/TH900 - 5.png';
+import image1TH900 from '../../../public/assets/TH900/TH900 - 1.webp';
+import image2TH900 from '../../../public/assets/TH900/TH900 - 2.webp';
+import image3TH900 from '../../../public/assets/TH900/TH900 - 3.webp';
+import image4TH900 from '../../../public/assets/TH900/TH900 - 4.webp';
+import image5TH900 from '../../../public/assets/TH900/TH900 - 5.webp';
 
-import image1TH1000 from '../../../public/assets/TH1000/TH1000 - 1.png';
-import image2TH1000 from '../../../public/assets/TH1000/TH1000 - 2.png';
-import image3TH1000 from '../../../public/assets/TH1000/TH1000 - 3.png';
-import image4TH1000 from '../../../public/assets/TH1000/TH1000 - 4.png';
-import image5TH1000 from '../../../public/assets/TH1000/TH1000 - 5.png';
-import image6TH1000 from '../../../public/assets/TH1000/TH1000 - 6.png';
-import image7TH1000 from '../../../public/assets/TH1000/TH1000 - 7.png';
+import image1TH1000 from '../../../public/assets/TH1000/TH1000 - 1.webp';
+import image2TH1000 from '../../../public/assets/TH1000/TH1000 - 2.webp';
+import image3TH1000 from '../../../public/assets/TH1000/TH1000 - 3.webp';
+import image4TH1000 from '../../../public/assets/TH1000/TH1000 - 4.webp';
+import image5TH1000 from '../../../public/assets/TH1000/TH1000 - 5.webp';
+import image6TH1000 from '../../../public/assets/TH1000/TH1000 - 6.webp';
+import image7TH1000 from '../../../public/assets/TH1000/TH1000 - 7.webp';
 
-import extratora1 from '../../../public/assets/extratora/extratora - 1.png';
-import extratora2 from '../../../public/assets/extratora/extratora - 2.png';
-import extratora3 from '../../../public/assets/extratora/extratora - 3.png';
-import extratora4 from '../../../public/assets/extratora/extratora - 4.png';
-import extratora5 from '../../../public/assets/extratora/extratora - 5.png';
-import extratora6 from '../../../public/assets/extratora/extratora - 6.png';
-import extratora7 from '../../../public/assets/extratora/extratora - 7.png';
-import extratora8 from '../../../public/assets/extratora/extratora - 8.png';
+import extratora1 from '../../../public/assets/extratora/extratora - 1.webp';
+import extratora2 from '../../../public/assets/extratora/extratora - 2.webp';
+import extratora3 from '../../../public/assets/extratora/extratora - 3.webp';
+import extratora4 from '../../../public/assets/extratora/extratora - 4.webp';
+import extratora5 from '../../../public/assets/extratora/extratora - 5.webp';
+import extratora6 from '../../../public/assets/extratora/extratora - 6.webp';
+import extratora7 from '../../../public/assets/extratora/extratora - 7.webp';
+import extratora8 from '../../../public/assets/extratora/extratora - 8.webp';
 
-import polidora1 from '../../../public/assets/polidora/polidora - 1.png';
-import polidora2 from '../../../public/assets/polidora/polidora - 2.png';
-import polidora3 from '../../../public/assets/polidora/polidora - 3.png';
-import polidora4 from '../../../public/assets/polidora/polidora - 4.png';
-import polidora5 from '../../../public/assets/polidora/polidora - 5.png';
+import polidora1 from '../../../public/assets/polidora/polidora - 1.webp';
+import polidora2 from '../../../public/assets/polidora/polidora - 2.webp';
+import polidora3 from '../../../public/assets/polidora/polidora - 3.webp';
+import polidora4 from '../../../public/assets/polidora/polidora - 4.webp';
+import polidora5 from '../../../public/assets/polidora/polidora - 5.webp';
 
-import imageTH310 from "../../../public/assets/TH310.png";
-import imageTH800 from "../../../public/assets/TH800 - 1.png";
-import imageTH900 from "../../../public/assets/TH900 - 2.png";
-import imageTH1000 from "../../../public/assets/TH1000 - 1.png";
-import imageExtratora from "../../../public/assets/extratora.png";
-import imagePolidora from "../../../public/assets/polidora.png";
+import imageTH310 from "../../../public/assets/TH310.webp";
+import imageTH800 from "../../../public/assets/TH800 - 1.webp";
+import imageTH900 from "../../../public/assets/TH900 - 2.webp";
+import imageTH1000 from "../../../public/assets/TH1000 - 1.webp";
+import imageExtratora from "../../../public/assets/extratora.webp";
+import imagePolidora from "../../../public/assets/polidora.webp";
 
 export const featureMachineText: FeatureText[] = [
   {

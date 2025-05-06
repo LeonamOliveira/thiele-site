@@ -3,17 +3,17 @@ import Footer from "./footer";
 import Feature from "../components/feature/feature";
 import CarouselSwiper from "@/components/carousel-swiper";
 import Image from "next/image";
-import imageChumbo from "../../public/assets/chumbo.png";
 import { featureMachineText } from "@/components/feature/machines-features";
 import { Feedback } from "@/components/feedback";
 
-import imageTH100 from "../../public/assets/TH100/TH100 - 1.png";
-import imageTH300 from "../../public/assets/TH300.png";
-import imageTH310 from "../../public/assets/TH310.png";
-import imageTH700 from "../../public/assets/TH700 - 1.png";
-import imageTH800 from "../../public/assets/TH800 - 1.png";
-import imageTH900 from "../../public/assets/TH900 - 2.png";
-import imageTH1000 from "../../public/assets/TH1000 - 1.png";
+import imageChumbo from "../../public/assets/chumbo.webp";
+import imageTH100 from "../../public/assets/TH100/TH100 - 1.webp";
+import imageTH300 from "../../public/assets/TH300.webp";
+import imageTH310 from "../../public/assets/TH310.webp";
+import imageTH700 from "../../public/assets/TH700 - 1.webp";
+import imageTH800 from "../../public/assets/TH800 - 1.webp";
+import imageTH900 from "../../public/assets/TH900 - 2.webp";
+import imageTH1000 from "../../public/assets/TH1000 - 1.webp";
 
 export default function Home() {
   const images = [

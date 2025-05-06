@@ -2,8 +2,8 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import ImageLogo from "../../public/assets/thiele-icon.png";
-import ImageMaquinas from "../../public/assets/Maquinas.jpg";
+import ImageLogo from "../../public/assets/thiele-icon.webp";
+import ImageMaquinas from "../../public/assets/Maquinas.webp";
 import { motion } from "framer-motion";
 import { Separator } from "@/components/ui/separator";
 
