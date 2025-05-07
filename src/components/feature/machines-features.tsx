@@ -339,7 +339,7 @@ export const featureMachineText: FeatureText[] = [
     title: "Extratora",
     href: "/",
     description:
-      "A Extratora de Cera oferece desempenho robusto e eficiência notável na remoção de cera, ideal para a manutenção eficaz de grandes áreas.",
+      "A Extratora de Cera oferece desempenho robusto e eficiência notável, ideal para a manutenção eficaz de grandes áreas.",
     cta: "Solicite um orçamento",
     message: "http://wa.me/+5511930111440?text=Ol%C3%A1%2C%20eu%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20da%20m%C3%A1quina%20TH2000",
     image: imageExtratora.src,
